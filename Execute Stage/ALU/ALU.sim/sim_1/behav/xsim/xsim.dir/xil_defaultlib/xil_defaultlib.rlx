@@ -1,0 +1,15 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sim_1/new/aluTB.vhd,1602785445,vhdl,,,,alutb,,,,,,,,
+C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/ALU4.vhd,1602527299,vhdl,,,,alu4,,,,,,,,
+C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd,1602785759,vhdl,,,,full_adder,,,,,,,,
+C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/Multiplier.vhd,1602786056,vhdl,,,,multiplier,,,,,,,,
+C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/Ripple_Carry_Full_Adder.vhd,1602785643,vhdl,,,,ripplecarryfulladder,,,,,,,,
+C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/alu_and.vhd,1602178591,vhdl,,,,alu_and,,,,,,,,
+C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/alu_or.vhd,1602178785,vhdl,,,,alu_or,,,,,,,,
+C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/alu_xor.vhd,1602178769,vhdl,,,,alu_xor,,,,,,,,
+C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/sllN.vhd,1602276324,vhdl,,,,slln,,,,,,,,
+C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/sraN.vhd,1602276594,vhdl,,,,sran,,,,,,,,
+C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/srlN.vhd,1602276577,vhdl,,,,srln,,,,,,,,

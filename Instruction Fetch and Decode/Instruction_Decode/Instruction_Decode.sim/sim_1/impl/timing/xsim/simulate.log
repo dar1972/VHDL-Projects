@@ -1,0 +1,5 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+Failure: Testbench Concluded
+Time: 350 ns  Iteration: 1  Process: /InstructionDecodeTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode/Instruction_Decode.srcs/sim_1/new/InstructionDecodeTB.vhd
+$finish called at time : 350 ns : File "C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode/Instruction_Decode.srcs/sim_1/new/InstructionDecodeTB.vhd" Line 194

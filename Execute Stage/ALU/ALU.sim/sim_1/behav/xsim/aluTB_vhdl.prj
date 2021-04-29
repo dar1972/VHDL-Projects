@@ -1,0 +1,16 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../ALU.srcs/sources_1/new/ALU4.vhd" \
+"../../../../ALU.srcs/sources_1/new/Full_Adder.vhd" \
+"../../../../ALU.srcs/sources_1/new/Multiplier.vhd" \
+"../../../../ALU.srcs/sources_1/new/Ripple_Carry_Full_Adder.vhd" \
+"../../../../ALU.srcs/sources_1/new/alu_and.vhd" \
+"../../../../ALU.srcs/sources_1/new/alu_or.vhd" \
+"../../../../ALU.srcs/sources_1/new/alu_xor.vhd" \
+"../../../../ALU.srcs/sources_1/new/sllN.vhd" \
+"../../../../ALU.srcs/sources_1/new/sraN.vhd" \
+"../../../../ALU.srcs/sources_1/new/srlN.vhd" \
+"../../../../ALU.srcs/sim_1/new/aluTB.vhd" \
+
+# Do not sort compile order
+nosort

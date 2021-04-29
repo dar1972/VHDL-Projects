@@ -1,0 +1,110 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Fri Sep 25 17:55:29 2020
+| Host         : Macbook_Win running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file instruction_decoder_control_sets_placed.rpt
+| Design       : instruction_decoder
+| Device       : xc7a35t
+------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    32 |
+|    Minimum number of control sets                        |    32 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |     0 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    32 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    32 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |            1024 |          447 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------+---------------------------------------------+------------------+------------------+----------------+
+| Clock Signal |                Enable Signal                | Set/Reset Signal | Slice Load Count | Bel Load Count |
++--------------+---------------------------------------------+------------------+------------------+----------------+
+| ~clk         | regfile/module_gen[27].module/output_and_27 |                  |                6 |             32 |
+| ~clk         | regfile/module_gen[28].module/output_and_28 |                  |                8 |             32 |
+| ~clk         | regfile/module_gen[12].module/output_and_12 |                  |               14 |             32 |
+| ~clk         | regfile/module_gen[29].module/output_and_29 |                  |               11 |             32 |
+| ~clk         | regfile/module_gen[25].module/output_and_25 |                  |               15 |             32 |
+| ~clk         | regfile/module_gen[26].module/output_and_26 |                  |                8 |             32 |
+| ~clk         | regfile/module_gen[2].module/output_and_2   |                  |               15 |             32 |
+| ~clk         | regfile/module_gen[30].module/output_and_30 |                  |               14 |             32 |
+| ~clk         | regfile/module_gen[5].module/output_and_5   |                  |               12 |             32 |
+| ~clk         | regfile/module_gen[6].module/output_and_6   |                  |               18 |             32 |
+| ~clk         | regfile/module_gen[7].module/output_and_7   |                  |               17 |             32 |
+| ~clk         | regfile/module_gen[31].module/output_and_31 |                  |               18 |             32 |
+| ~clk         | regfile/module_gen[8].module/output_and_8   |                  |               16 |             32 |
+| ~clk         | regfile/module_gen[4].module/output_and_4   |                  |               11 |             32 |
+| ~clk         | regfile/module_gen[3].module/output_and_3   |                  |               12 |             32 |
+| ~clk         | regfile/module_gen[16].module/output_and_16 |                  |               20 |             32 |
+| ~clk         | regfile/module_gen[17].module/output_and_17 |                  |               14 |             32 |
+| ~clk         | regfile/module_gen[18].module/output_and_18 |                  |               10 |             32 |
+| ~clk         | regfile/module_gen[13].module/output_and_13 |                  |               10 |             32 |
+| ~clk         | regfile/module_gen[9].module/output_and_9   |                  |               20 |             32 |
+| ~clk         | regfile/module_gen[14].module/output_and_14 |                  |                9 |             32 |
+| ~clk         | regfile/module_gen[15].module/output_and_15 |                  |               11 |             32 |
+| ~clk         | regfile/module_gen[0].module/output_and_0   |                  |               22 |             32 |
+| ~clk         | regfile/module_gen[10].module/output_and_10 |                  |               13 |             32 |
+| ~clk         | regfile/module_gen[11].module/output_and_11 |                  |               11 |             32 |
+| ~clk         | regfile/module_gen[1].module/output_and_1   |                  |               16 |             32 |
+| ~clk         | regfile/module_gen[20].module/output_and_20 |                  |               14 |             32 |
+| ~clk         | regfile/module_gen[21].module/output_and_21 |                  |               13 |             32 |
+| ~clk         | regfile/module_gen[22].module/output_and_22 |                  |               14 |             32 |
+| ~clk         | regfile/module_gen[24].module/output_and_24 |                  |               18 |             32 |
+| ~clk         | regfile/module_gen[23].module/output_and_23 |                  |               20 |             32 |
+| ~clk         | regfile/module_gen[19].module/output_and_19 |                  |               17 |             32 |
++--------------+---------------------------------------------+------------------+------------------+----------------+
+
+

@@ -1,0 +1,111 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Sep 25 15:08:31 2020
+# Process ID: 11200
+# Current directory: C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5588 C:\Users\Dhruv\Desktop\DSD II\Lab_3\Instruction_Fetch\Lab_3.xpr
+# Log file: C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/vivado.log
+# Journal file: C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.xpr}
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sim_1/new
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sim_1/new
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sim_1/new
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sim_1/new
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sim_1/new
+file mkdir {C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sim_1/new}
+close [ open {C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sim_1/new/InstructionFetchTB.v} w ]
+add_files -fileset sim_1 {{C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sim_1/new/InstructionFetchTB.v}}
+update_compile_order -fileset sim_1
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/constrs_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sim_1/new/InstructionFetchTB.v}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sim_1/new/InstructionFetchTB.v}}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sim_1/new/InstructionFetchTB.vhd} w ]
+add_files -fileset sim_1 {{C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sim_1/new/InstructionFetchTB.vhd}}
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sources_1/new
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sources_1/new
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sources_1/new
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sources_1/new
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sources_1/new
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sources_1/new
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sources_1/new
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sources_1/new
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sources_1/new
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sources_1/new
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sources_1/new
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sources_1/new
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sources_1/new
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sources_1/new
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sources_1/new
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sources_1/new
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sources_1/new
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sources_1/new
+file mkdir {C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sources_1/new}
+close [ open {C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sources_1/new/InstructionFetch.vhd} w ]
+add_files {{C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sources_1/new/InstructionFetch.vhd}}
+close [ open {C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sources_1/new/InstructionMemory.vhd} w ]
+add_files {{C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sources_1/new/InstructionMemory.vhd}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+source InstructionFetchTB.tcl
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_simulation -mode post-synthesis -type timing
+source InstructionFetchTB.tcl
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_simulation -mode post-implementation -type timing
+source InstructionFetchTB.tcl
+create_project Instruction_Decode {C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode} -part xc7a35tcpg236-1
+set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode/Instruction_Decode.srcs/sources_1/new
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode/Instruction_Decode.srcs/sources_1/new
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode/Instruction_Decode.srcs/sources_1/new
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode/Instruction_Decode.srcs/sources_1/new
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode/Instruction_Decode.srcs/sources_1/new
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode/Instruction_Decode.srcs/sources_1/new
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode/Instruction_Decode.srcs/sources_1/new
+set_property target_language VHDL [current_project]
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode/Instruction_Decode.srcs/sources_1/new
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode/Instruction_Decode.srcs/sources_1/new
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode/Instruction_Decode.srcs/sources_1/new
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode/Instruction_Decode.srcs/sources_1/new
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode/Instruction_Decode.srcs/sources_1/new
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode/Instruction_Decode.srcs/sources_1/new
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode/Instruction_Decode.srcs/sources_1/new
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode/Instruction_Decode.srcs/sources_1/new
+file mkdir {C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode/Instruction_Decode.srcs/sources_1/new}
+close [ open {C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode/Instruction_Decode.srcs/sources_1/new/GenericDecoder.vhd} w ]
+add_files {{C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode/Instruction_Decode.srcs/sources_1/new/GenericDecoder.vhd}}
+close [ open {C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode/Instruction_Decode.srcs/sources_1/new/GenericMultiplexer.vhd} w ]
+add_files {{C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode/Instruction_Decode.srcs/sources_1/new/GenericMultiplexer.vhd}}
+close [ open {C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode/Instruction_Decode.srcs/sources_1/new/RegisterModule.vhd} w ]
+add_files {{C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode/Instruction_Decode.srcs/sources_1/new/RegisterModule.vhd}}
+close [ open {C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode/Instruction_Decode.srcs/sources_1/new/InstructionDecoder.vhd} w ]
+add_files {{C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode/Instruction_Decode.srcs/sources_1/new/InstructionDecoder.vhd}}
+close [ open {C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode/Instruction_Decode.srcs/sources_1/new/TwoInAnd.vhd} w ]
+add_files {{C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode/Instruction_Decode.srcs/sources_1/new/TwoInAnd.vhd}}
+close [ open {C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode/Instruction_Decode.srcs/sources_1/new/ControlUnit.vhd} w ]
+add_files {{C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode/Instruction_Decode.srcs/sources_1/new/ControlUnit.vhd}}
+close [ open {C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode/Instruction_Decode.srcs/sources_1/new/RegisterFile.vhd} w ]
+add_files {{C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode/Instruction_Decode.srcs/sources_1/new/RegisterFile.vhd}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_project
+close_sim
+launch_simulation -mode post-implementation -type timing
+source InstructionFetchTB.tcl
+close_sim
+current_sim simulation_2
+close_sim
+close_sim

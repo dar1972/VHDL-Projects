@@ -1,0 +1,13 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.sim/sim_1/synth/timing/xsim/RegisterFileTB_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-311] analyzing module register_module
+INFO: [VRFC 10-311] analyzing module register_module_0
+INFO: [VRFC 10-311] analyzing module register_module_1
+INFO: [VRFC 10-311] analyzing module register_module_2
+INFO: [VRFC 10-311] analyzing module register_module_3
+INFO: [VRFC 10-311] analyzing module register_module_4
+INFO: [VRFC 10-311] analyzing module register_module_5
+INFO: [VRFC 10-311] analyzing module register_module_6
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/sim_1/new/RegisterFileTB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RegisterFileTB'

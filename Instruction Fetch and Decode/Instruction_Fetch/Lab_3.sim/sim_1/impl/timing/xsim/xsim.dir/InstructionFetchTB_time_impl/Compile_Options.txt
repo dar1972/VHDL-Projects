@@ -1,0 +1,1 @@
+-wto "0ccae0b1144644db8f8aaf8ccb943ff0" --incr --debug "typical" --relax --mt "2" --maxdelay -L "xil_defaultlib" -L "simprims_ver" -L "secureip" --snapshot "InstructionFetchTB_time_impl" -transport_int_delays -pulse_r "0" -pulse_int_r "0" -pulse_e "0" -pulse_int_e "0" "xil_defaultlib.InstructionFetchTB" "xil_defaultlib.glbl" -log "elaborate.log" 

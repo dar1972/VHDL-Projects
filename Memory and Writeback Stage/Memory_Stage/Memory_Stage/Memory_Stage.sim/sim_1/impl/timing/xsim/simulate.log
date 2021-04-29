@@ -1,0 +1,4 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+Error: but should be x'00001111'
+Time: 140 ns  Iteration: 1  Process: /Memory_Stage_tb/stimulus  File: C:/Users/Dhruv/Desktop/DSD II/Lab_5/Memory_Stage/Memory_Stage/Memory_Stage.srcs/sim_1/new/Memory_StageTB.vhd

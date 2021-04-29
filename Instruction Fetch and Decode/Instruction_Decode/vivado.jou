@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Sep 27 12:48:45 2020
+# Process ID: 11964
+# Current directory: C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2820 C:\Users\Dhruv\Desktop\DSD II\Lab_3\Instruction_Decode\Instruction_Decode.xpr
+# Log file: C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode/vivado.log
+# Journal file: C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode/Instruction_Decode.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source InstructionDecodeTB.tcl
+launch_simulation -mode post-synthesis -type timing
+source InstructionDecodeTB.tcl
+launch_simulation -mode post-implementation -type timing
+source InstructionDecodeTB.tcl
+report_utilization -name utilization_1
+close_sim
+current_sim simulation_2
+close_sim
+close_sim

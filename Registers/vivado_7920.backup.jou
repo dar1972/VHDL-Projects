@@ -1,0 +1,49 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Sep 15 13:12:57 2020
+# Process ID: 7920
+# Current directory: C:/Users/Dhruv/Desktop/DSD II/Lab_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8204 C:\Users\Dhruv\Desktop\DSD II\Lab_2\Lab_2.xpr
+# Log file: C:/Users/Dhruv/Desktop/DSD II/Lab_2/vivado.log
+# Journal file: C:/Users/Dhruv/Desktop/DSD II/Lab_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source RegisterFileTB.tcl
+launch_simulation -mode post-synthesis -type timing
+source RegisterFileTB.tcl
+launch_simulation -mode post-implementation -type timing
+source RegisterFileTB.tcl
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close_design
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close_design
+open_hw
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+connect_hw_server
+open_hw_target
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+current_sim simulation_1
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+relaunch_sim
+launch_simulation
+current_sim simulation_3
+close_sim
+close_sim

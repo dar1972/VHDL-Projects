@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Aug 28 16:17:42 2020
+# Process ID: 7384
+# Current directory: C:/Users/Dhruv/Desktop/DSD II/Lab_1.2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5292 C:\Users\Dhruv\Desktop\DSD II\Lab_1.2\Lab_1.xpr
+# Log file: C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/vivado.log
+# Journal file: C:/Users/Dhruv/Desktop/DSD II/Lab_1.2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.xpr}
+update_compile_order -fileset sources_1
+launch_simulation -mode post-implementation -type timing
+source aluTB.tcl
+launch_simulation
+source aluTB.tcl
+launch_simulation -mode post-synthesis -type timing
+source aluTB.tcl
+report_utilization -name utilization_1
+current_sim simulation_1
+close_sim
+launch_simulation -mode post-implementation -type timing
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+current_design impl_1
+refresh_design
+launch_simulation -mode post-implementation -type timing
+current_sim simulation_3
+close_sim
+close_sim

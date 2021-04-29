@@ -1,0 +1,164 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Oct  9 15:17:55 2020
+# Process ID: 452
+# Current directory: C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1632 C:\Users\Dhruv\Desktop\DSD II\Lab_4\Execute_Stage\Execute_Stage.xpr
+# Log file: C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/vivado.log
+# Journal file: C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/Execute_Stage.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/Dhruv/Lab_4/Execute_Stage' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:06 . Memory (MB): peak = 756.191 ; gain = 113.797
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/Execute_Stage.srcs/sources_1/new
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/Execute_Stage.srcs/sources_1/new
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/Execute_Stage.srcs/sources_1/new
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/Execute_Stage.srcs/sources_1/new
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/Execute_Stage.srcs/sources_1/new
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/Execute_Stage.srcs/sources_1/new
+file mkdir {C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/Execute_Stage.srcs/sources_1/new}
+close [ open {C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/Execute_Stage.srcs/sources_1/new/Execute_Stage.vhd} w ]
+add_files {{C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/Execute_Stage.srcs/sources_1/new/Execute_Stage.vhd}}
+update_compile_order -fileset sources_1
+add_files -norecurse {{C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/Execute_Stage.srcs/sources_1/new/Ripple_Carry_Full_Adder.vhd} {C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/Execute_Stage.srcs/sources_1/new/SRL.vhd} {C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/Execute_Stage.srcs/sources_1/new/SLL.vhd} {C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/Execute_Stage.srcs/sources_1/new/Full_Adder.vhd} {C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/Execute_Stage.srcs/sources_1/new/SRA.vhd} {C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/Execute_Stage.srcs/sources_1/new/OR.vhd} {C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/Execute_Stage.srcs/sources_1/new/Multiplier.vhd} {C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/Execute_Stage.srcs/sources_1/new/XOR.vhd} {C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/Execute_Stage.srcs/sources_1/new/AND.vhd} {C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/Execute_Stage.srcs/sources_1/new/ALU4.vhd}}
+update_compile_order -fileset sources_1
+close [ open {C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/Execute_Stage.srcs/sources_1/new/Multiplexer.vhd} w ]
+add_files {{C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/Execute_Stage.srcs/sources_1/new/Multiplexer.vhd}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/Execute_Stage.srcs/sim_1/new
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/Execute_Stage.srcs/sim_1/new
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/Execute_Stage.srcs/sim_1/new
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/Execute_Stage.srcs/sim_1/new
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/Execute_Stage.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+file mkdir C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/Execute_Stage.srcs/sim_1/new
+file mkdir {C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/Execute_Stage.srcs/sim_1/new}
+close [ open {C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/Execute_Stage.srcs/sim_1/new/ExecuteStageTB.vhd} w ]
+add_files -fileset sim_1 {{C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/Execute_Stage.srcs/sim_1/new/ExecuteStageTB.vhd}}
+update_compile_order -fileset sim_1
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2019.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+close_project
+create_project Multiplier {C:/Users/Dhruv/Desktop/DSD II/Lab_4/Multiplier} -part xc7a35tcpg236-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
+set_property target_language VHDL [current_project]
+set_property simulator_language VHDL [current_project]
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {{C:/Users/Dhruv/Desktop/DSD II/Lab_4/Multiplier/Full_Adder.vhd} {C:/Users/Dhruv/Desktop/DSD II/Lab_4/Multiplier/Multiplier.vhd} {C:/Users/Dhruv/Desktop/DSD II/Lab_4/Multiplier/aluTB.vhd}}
+update_compile_order -fileset sim_1
+add_files -norecurse {{C:/Users/Dhruv/Desktop/DSD II/Lab_4/Multiplier/Full_Adder.vhd} {C:/Users/Dhruv/Desktop/DSD II/Lab_4/Multiplier/Multiplier.vhd}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/Dhruv/Desktop/DSD II/Lab_4/Multiplier/Multiplier.vhd}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/Users/Dhruv/Desktop/DSD II/Lab_4/Multiplier/Multiplier.vhd}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/Dhruv/Desktop/DSD II/Lab_4/Multiplier/Full_Adder.vhd}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/Users/Dhruv/Desktop/DSD II/Lab_4/Multiplier/Full_Adder.vhd}}
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/Multiplier/Multiplier.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Multiplier' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/Multiplier/Multiplier.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Multiplier_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Dhruv/Desktop/DSD II/Lab_4/Multiplier/Multiplier.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Multiplier'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/Multiplier/Multiplier.sim/sim_1/behav/xsim'
+"xelab -wto cd69bd9a4732408a8f989dcd56e125cd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Multiplier_behav xil_defaultlib.Multiplier -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto cd69bd9a4732408a8f989dcd56e125cd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Multiplier_behav xil_defaultlib.Multiplier -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-4940] 'fulladder' remains a black box since it has no binding entity [C:/Users/Dhruv/Desktop/DSD II/Lab_4/Multiplier/Multiplier.vhd:55]
+WARNING: [VRFC 10-4940] 'fulladder' remains a black box since it has no binding entity [C:/Users/Dhruv/Desktop/DSD II/Lab_4/Multiplier/Multiplier.vhd:64]
+WARNING: [VRFC 10-4940] 'fulladder' remains a black box since it has no binding entity [C:/Users/Dhruv/Desktop/DSD II/Lab_4/Multiplier/Multiplier.vhd:73]
+WARNING: [VRFC 10-4940] 'fulladder' remains a black box since it has no binding entity [C:/Users/Dhruv/Desktop/DSD II/Lab_4/Multiplier/Multiplier.vhd:82]
+WARNING: [VRFC 10-4940] 'fulladder' remains a black box since it has no binding entity [C:/Users/Dhruv/Desktop/DSD II/Lab_4/Multiplier/Multiplier.vhd:91]
+WARNING: [VRFC 10-4940] 'fulladder' remains a black box since it has no binding entity [C:/Users/Dhruv/Desktop/DSD II/Lab_4/Multiplier/Multiplier.vhd:100]
+WARNING: [VRFC 10-4940] 'fulladder' remains a black box since it has no binding entity [C:/Users/Dhruv/Desktop/DSD II/Lab_4/Multiplier/Multiplier.vhd:109]
+WARNING: [VRFC 10-4940] 'fulladder' remains a black box since it has no binding entity [C:/Users/Dhruv/Desktop/DSD II/Lab_4/Multiplier/Multiplier.vhd:118]
+WARNING: [VRFC 10-4940] 'fulladder' remains a black box since it has no binding entity [C:/Users/Dhruv/Desktop/DSD II/Lab_4/Multiplier/Multiplier.vhd:127]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.multiplier
+Built simulation snapshot Multiplier_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Dhruv/Desktop/DSD -notrace
+couldn't read file "C:/Users/Dhruv/Desktop/DSD": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Fri Oct  9 16:53:44 2020...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 854.348 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/Multiplier/Multiplier.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Multiplier_behav -key {Behavioral:sim_1:Functional:Multiplier} -tclbatch {Multiplier.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source Multiplier.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Multiplier_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 886.027 ; gain = 31.680
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Oct  9 16:56:09 2020...

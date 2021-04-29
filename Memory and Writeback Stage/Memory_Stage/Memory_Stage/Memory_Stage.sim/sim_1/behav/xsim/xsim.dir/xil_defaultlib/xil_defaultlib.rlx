@@ -1,0 +1,9 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/Dhruv/Desktop/DSD II/Lab_5/Memory_Stage/Memory_Stage/Memory_Stage.srcs/sim_1/new/Memory_StageTB.vhd,1603650942,vhdl,,,,memory_stage_tb,,,,,,,,
+C:/Users/Dhruv/Desktop/DSD II/Lab_5/Memory_Stage/Memory_Stage/Memory_Stage.srcs/sources_1/new/Data_Memory.vhd,1603650670,vhdl,,,,data_memory,,,,,,,,
+C:/Users/Dhruv/Desktop/DSD II/Lab_5/Memory_Stage/Memory_Stage/Memory_Stage.srcs/sources_1/new/Memory_Stage.vhd,1603650672,vhdl,,,,memory_stage,,,,,,,,
+C:/Users/Dhruv/Desktop/DSD II/Lab_5/Memory_Stage/Memory_Stage/Memory_Stage.srcs/sources_1/new/bcd_seven_seg_converter.vhd,1603650091,vhdl,,,,bcdsevensegconverter,,,,,,,,
+C:/Users/Dhruv/Desktop/DSD II/Lab_5/Memory_Stage/Memory_Stage/Memory_Stage.srcs/sources_1/new/seven_seg_controller.vhd,1603650121,vhdl,,,,sevensegcontroller,,,,,,,,

@@ -1,0 +1,14 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+Error: Error in Operation
+Time: 520 ns  Iteration: 0  Process: /RegisterFileTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/sim_1/new/RegisterFileTB.vhd
+Error: Error in Operation
+Time: 660 ns  Iteration: 0  Process: /RegisterFileTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/sim_1/new/RegisterFileTB.vhd
+Error: Error in Operation
+Time: 660 ns  Iteration: 0  Process: /RegisterFileTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/sim_1/new/RegisterFileTB.vhd
+Error: Error in Operation
+Time: 800 ns  Iteration: 0  Process: /RegisterFileTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/sim_1/new/RegisterFileTB.vhd
+Error: Error in Operation
+Time: 800 ns  Iteration: 0  Process: /RegisterFileTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/sim_1/new/RegisterFileTB.vhd
+Error: Error in Operation
+Time: 940 ns  Iteration: 0  Process: /RegisterFileTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/sim_1/new/RegisterFileTB.vhd

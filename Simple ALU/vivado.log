@@ -1,0 +1,223 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Sep  3 14:44:15 2020
+# Process ID: 10880
+# Current directory: C:/Users/Dhruv/Desktop/DSD II/Lab_1.2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5644 C:\Users\Dhruv\Desktop\DSD II\Lab_1.2\Lab_1.xpr
+# Log file: C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/vivado.log
+# Journal file: C:/Users/Dhruv/Desktop/DSD II/Lab_1.2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:05 . Memory (MB): peak = 778.016 ; gain = 160.137
+update_compile_order -fileset sources_1
+close [ open {C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/xor.vhd} w ]
+add_files {{C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/xor.vhd}}
+close [ open {C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/or.vhd} w ]
+add_files {{C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/or.vhd}}
+close [ open {C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/and.vhd} w ]
+add_files {{C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/and.vhd}}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/and.vhd}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/or.vhd}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/xor.vhd}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/and.vhd} {C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/or.vhd} {C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/xor.vhd}}
+close [ open {C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/alu_or.vhd} w ]
+add_files {{C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/alu_or.vhd}}
+update_compile_order -fileset sources_1
+close [ open {C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/alu_xor.vhd} w ]
+add_files {{C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/alu_xor.vhd}}
+close [ open {C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/alu_and.vhd} w ]
+add_files {{C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/alu_and.vhd}}
+update_compile_order -fileset sources_1
+close [ open {C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/sraN.vhd} w ]
+add_files {{C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/sraN.vhd}}
+close [ open {C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/srlN.vhd} w ]
+add_files {{C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/srlN.vhd}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'aluTB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj aluTB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/alu4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'alu4'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/alu_and.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'alu_and'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/alu_or.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'alu_or'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/alu_xor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'alu_xor'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/sraN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sraN'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/srlN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'srlN'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sim_1/new/aluTB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'aluTB'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.sim/sim_1/behav/xsim'
+"xelab -wto a4d1e78c60384e8b97d07145100e6f4f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot aluTB_behav xil_defaultlib.aluTB -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto a4d1e78c60384e8b97d07145100e6f4f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot aluTB_behav xil_defaultlib.aluTB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-664] expression has 4 elements ; expected 32 [C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sim_1/new/aluTB.vhd:23]
+ERROR: [VRFC 10-664] expression has 4 elements ; expected 32 [C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sim_1/new/aluTB.vhd:24]
+ERROR: [VRFC 10-718] formal port <OP> does not exist in entity <alu4>.  Please compare the definition of block <alu4> to its component declaration and its instantion to detect the mismatch. [C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sim_1/new/aluTB.vhd:25]
+ERROR: [VRFC 10-664] expression has 4 elements ; expected 32 [C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sim_1/new/aluTB.vhd:26]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit alutb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'aluTB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj aluTB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sim_1/new/aluTB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'aluTB'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.sim/sim_1/behav/xsim'
+"xelab -wto a4d1e78c60384e8b97d07145100e6f4f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot aluTB_behav xil_defaultlib.aluTB -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto a4d1e78c60384e8b97d07145100e6f4f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot aluTB_behav xil_defaultlib.aluTB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-718] formal port <OP> does not exist in entity <alu4>.  Please compare the definition of block <alu4> to its component declaration and its instantion to detect the mismatch. [C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sim_1/new/aluTB.vhd:34]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit alutb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'aluTB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj aluTB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/alu4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'alu4'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sim_1/new/aluTB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'aluTB'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.sim/sim_1/behav/xsim'
+"xelab -wto a4d1e78c60384e8b97d07145100e6f4f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot aluTB_behav xil_defaultlib.aluTB -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto a4d1e78c60384e8b97d07145100e6f4f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot aluTB_behav xil_defaultlib.aluTB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3311] expression has 32 elements ; formal 'a' expects 4 [C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/alu4.vhd:103]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit alutb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'aluTB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj aluTB_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.sim/sim_1/behav/xsim'
+"xelab -wto a4d1e78c60384e8b97d07145100e6f4f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot aluTB_behav xil_defaultlib.aluTB -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto a4d1e78c60384e8b97d07145100e6f4f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot aluTB_behav xil_defaultlib.aluTB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3311] expression has 32 elements ; formal 'a' expects 4 [C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/alu4.vhd:103]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit alutb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'aluTB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj aluTB_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.sim/sim_1/behav/xsim'
+"xelab -wto a4d1e78c60384e8b97d07145100e6f4f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot aluTB_behav xil_defaultlib.aluTB -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto a4d1e78c60384e8b97d07145100e6f4f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot aluTB_behav xil_defaultlib.aluTB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3311] expression has 32 elements ; formal 'a' expects 4 [C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/alu4.vhd:103]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit alutb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'aluTB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj aluTB_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.sim/sim_1/behav/xsim'
+"xelab -wto a4d1e78c60384e8b97d07145100e6f4f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot aluTB_behav xil_defaultlib.aluTB -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto a4d1e78c60384e8b97d07145100e6f4f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot aluTB_behav xil_defaultlib.aluTB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3311] expression has 32 elements ; formal 'a' expects 4 [C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/alu4.vhd:103]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit alutb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Sep  3 16:41:26 2020...

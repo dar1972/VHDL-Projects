@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Sep 17 10:43:40 2020
+# Process ID: 8572
+# Current directory: C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.runs/synth_1
+# Command line: vivado.exe -log register_file.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source register_file.tcl
+# Log file: C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.runs/synth_1/register_file.vds
+# Journal file: C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source register_file.tcl -notrace

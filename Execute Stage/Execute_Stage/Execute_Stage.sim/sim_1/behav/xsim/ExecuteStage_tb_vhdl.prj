@@ -1,0 +1,18 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Execute_Stage.srcs/sources_1/new/ALU4.vhd" \
+"../../../../Execute_Stage.srcs/sources_1/new/AND.vhd" \
+"../../../../Execute_Stage.srcs/sources_1/new/Execute_Stage.vhd" \
+"../../../../Execute_Stage.srcs/sources_1/new/Full_Adder.vhd" \
+"../../../../Execute_Stage.srcs/sources_1/new/Multiplexer.vhd" \
+"../../../../Execute_Stage.srcs/sources_1/new/Multiplier.vhd" \
+"../../../../Execute_Stage.srcs/sources_1/new/OR.vhd" \
+"../../../../Execute_Stage.srcs/sources_1/new/Ripple_Carry_Full_Adder.vhd" \
+"../../../../Execute_Stage.srcs/sources_1/new/SLL.vhd" \
+"../../../../Execute_Stage.srcs/sources_1/new/SRA.vhd" \
+"../../../../Execute_Stage.srcs/sources_1/new/SRL.vhd" \
+"../../../../Execute_Stage.srcs/sources_1/new/XOR.vhd" \
+"../../../../Execute_Stage.srcs/sim_1/new/ExecuteStageTB.vhd" \
+
+# Do not sort compile order
+nosort

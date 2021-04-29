@@ -1,0 +1,17 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/Execute_Stage.srcs/sim_1/new/ExecuteStageTB.vhd,1602790149,vhdl,,,,executestage_tb,,,,,,,,
+C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/Execute_Stage.srcs/sources_1/new/ALU4.vhd,1602790247,vhdl,,,,alu4,,,,,,,,
+C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/Execute_Stage.srcs/sources_1/new/AND.vhd,1602178591,vhdl,,,,alu_and,,,,,,,,
+C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/Execute_Stage.srcs/sources_1/new/Execute_Stage.vhd,1602789847,vhdl,,,,execute_stage,,,,,,,,
+C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/Execute_Stage.srcs/sources_1/new/Full_Adder.vhd,1602790476,vhdl,,,,full_adder,,,,,,,,
+C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/Execute_Stage.srcs/sources_1/new/Multiplexer.vhd,1602272259,vhdl,,,,mux,,,,,,,,
+C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/Execute_Stage.srcs/sources_1/new/Multiplier.vhd,1602270345,vhdl,,,,multiplier,,,,,,,,
+C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/Execute_Stage.srcs/sources_1/new/OR.vhd,1602178785,vhdl,,,,alu_or,,,,,,,,
+C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/Execute_Stage.srcs/sources_1/new/Ripple_Carry_Full_Adder.vhd,1602789672,vhdl,,,,ripplecarryfulladder,,,,,,,,
+C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/Execute_Stage.srcs/sources_1/new/SLL.vhd,1602790325,vhdl,,,,slln,,,,,,,,
+C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/Execute_Stage.srcs/sources_1/new/SRA.vhd,1602790429,vhdl,,,,sran,,,,,,,,
+C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/Execute_Stage.srcs/sources_1/new/SRL.vhd,1602790373,vhdl,,,,srln,,,,,,,,
+C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/Execute_Stage.srcs/sources_1/new/XOR.vhd,1602178769,vhdl,,,,alu_xor,,,,,,,,

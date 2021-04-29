@@ -1,0 +1,489 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Sep 17 10:34:43 2020
+# Process ID: 5492
+# Current directory: C:/Users/Dhruv/Desktop/DSD II/Lab_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10064 C:\Users\Dhruv\Desktop\DSD II\Lab_2\Lab_2.xpr
+# Log file: C:/Users/Dhruv/Desktop/DSD II/Lab_2/vivado.log
+# Journal file: C:/Users/Dhruv/Desktop/DSD II/Lab_2\vivado.jou
+#-----------------------------------------------------------
+start_guopen_project {C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.xpr}
+ScScanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repexit
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 17 10:35:04 2020...
+C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 780.543 ; gain = 143.191
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RegisterFileTB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj RegisterFileTB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/sources_1/new/generic_decoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'generic_decoder'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/sources_1/new/register_file.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'register_file'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.sim/sim_1/behav/xsim'
+"xelab -wto 82bc7047c6b74fb682e07f2ea87a2de0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot RegisterFileTB_behav xil_defaultlib.RegisterFileTB -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 82bc7047c6b74fb682e07f2ea87a2de0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot RegisterFileTB_behav xil_defaultlib.RegisterFileTB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-718] formal port <reset_n> does not exist in entity <register_file>.  Please compare the definition of block <register_file> to its component declaration and its instantion to detect the mismatch. [C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/sim_1/new/RegisterFileTB.vhd:59]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit registerfiletb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RegisterFileTB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj RegisterFileTB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/sources_1/new/register_file.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'register_file'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.sim/sim_1/behav/xsim'
+"xelab -wto 82bc7047c6b74fb682e07f2ea87a2de0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot RegisterFileTB_behav xil_defaultlib.RegisterFileTB -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 82bc7047c6b74fb682e07f2ea87a2de0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot RegisterFileTB_behav xil_defaultlib.RegisterFileTB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-718] formal port <reset_n> does not exist in entity <register_file>.  Please compare the definition of block <register_file> to its component declaration and its instantion to detect the mismatch. [C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/sim_1/new/RegisterFileTB.vhd:59]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit registerfiletb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RegisterFileTB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj RegisterFileTB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/sources_1/new/register_module.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'register_module'
+ERROR: [VRFC 10-2989] 'reset_n' is not declared [C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/sources_1/new/register_module.vhd:34]
+ERROR: [VRFC 10-3782] unit 'behavioral' ignored due to previous errors [C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/sources_1/new/register_module.vhd:30]
+INFO: [VRFC 10-3070] VHDL file 'C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/sources_1/new/register_module.vhd' ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RegisterFileTB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj RegisterFileTB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/sources_1/new/register_module.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'register_module'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.sim/sim_1/behav/xsim'
+"xelab -wto 82bc7047c6b74fb682e07f2ea87a2de0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot RegisterFileTB_behav xil_defaultlib.RegisterFileTB -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 82bc7047c6b74fb682e07f2ea87a2de0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot RegisterFileTB_behav xil_defaultlib.RegisterFileTB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-718] formal port <reset_n> does not exist in entity <register_file>.  Please compare the definition of block <register_file> to its component declaration and its instantion to detect the mismatch. [C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/sim_1/new/RegisterFileTB.vhd:59]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit registerfiletb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RegisterFileTB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj RegisterFileTB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/sim_1/new/RegisterFileTB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RegisterFileTB'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.sim/sim_1/behav/xsim'
+"xelab -wto 82bc7047c6b74fb682e07f2ea87a2de0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot RegisterFileTB_behav xil_defaultlib.RegisterFileTB -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 82bc7047c6b74fb682e07f2ea87a2de0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot RegisterFileTB_behav xil_defaultlib.RegisterFileTB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.two_and [two_and_default]
+Compiling architecture behavioral of entity xil_defaultlib.register_module [register_module_default]
+Compiling architecture behavioral of entity xil_defaultlib.generic_decoder [generic_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.generic_mux [generic_mux_default]
+Compiling architecture behavioral of entity xil_defaultlib.register_file [register_file_default]
+Compiling architecture tb of entity xil_defaultlib.registerfiletb
+Built simulation snapshot RegisterFileTB_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Dhruv/Desktop/DSD -notrace
+couldn't read file "C:/Users/Dhruv/Desktop/DSD": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Thu Sep 17 10:41:25 2020...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 813.199 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "RegisterFileTB_behav -key {Behavioral:sim_1:Functional:RegisterFileTB} -tclbatch {RegisterFileTB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source RegisterFileTB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Error in Operation
+Time: 100 ns  Iteration: 0  Process: /RegisterFileTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/sim_1/new/RegisterFileTB.vhd
+Error: Error in Operation
+Time: 100 ns  Iteration: 0  Process: /RegisterFileTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/sim_1/new/RegisterFileTB.vhd
+Error: Error in Operation
+Time: 240 ns  Iteration: 0  Process: /RegisterFileTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/sim_1/new/RegisterFileTB.vhd
+Error: Error in Operation
+Time: 240 ns  Iteration: 0  Process: /RegisterFileTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/sim_1/new/RegisterFileTB.vhd
+Error: Error in Operation
+Time: 380 ns  Iteration: 0  Process: /RegisterFileTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/sim_1/new/RegisterFileTB.vhd
+Error: Error in Operation
+Time: 520 ns  Iteration: 0  Process: /RegisterFileTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/sim_1/new/RegisterFileTB.vhd
+Error: Error in Operation
+Time: 520 ns  Iteration: 0  Process: /RegisterFileTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/sim_1/new/RegisterFileTB.vhd
+Error: Error in Operation
+Time: 660 ns  Iteration: 0  Process: /RegisterFileTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/sim_1/new/RegisterFileTB.vhd
+Error: Error in Operation
+Time: 660 ns  Iteration: 0  Process: /RegisterFileTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/sim_1/new/RegisterFileTB.vhd
+Error: Error in Operation
+Time: 800 ns  Iteration: 0  Process: /RegisterFileTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/sim_1/new/RegisterFileTB.vhd
+Error: Error in Operation
+Time: 800 ns  Iteration: 0  Process: /RegisterFileTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/sim_1/new/RegisterFileTB.vhd
+Error: Error in Operation
+Time: 940 ns  Iteration: 0  Process: /RegisterFileTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/sim_1/new/RegisterFileTB.vhd
+Error: Error in Operation
+Time: 940 ns  Iteration: 0  Process: /RegisterFileTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/sim_1/new/RegisterFileTB.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'RegisterFileTB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 836.582 ; gain = 23.383
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.runs/synth_1
+
+launch_runs impl_1 -jobs 4
+[Thu Sep 17 10:43:38 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.runs/synth_1/runme.log
+[Thu Sep 17 10:43:38 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.runs/impl_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/constrs_1/new/register_file.xdc]
+Finished Parsing XDC File [C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/constrs_1/new/register_file.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1163.773 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:21 ; elapsed = 00:00:12 . Memory (MB): peak = 1303.551 ; gain = 459.984
+launch_simulation -mode post-implementation -type timing
+INFO: [Vivado 12-5682] Launching post-implementation timing simulation in 'C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.sim/sim_1/impl/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-20] The target language is set to VHDL, it is not supported for simulation type 'timing', using Verilog instead.
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 2057.418 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 2057.418 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2057.418 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-32] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.sim/sim_1/impl/timing/xsim/RegisterFileTB_time_impl.v"
+INFO: [SIM-utils-34] Writing SDF file...
+INFO: [SIM-utils-35] write_sdf -mode timesim -process_corner slow -force -file "C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.sim/sim_1/impl/timing/xsim/RegisterFileTB_time_impl.sdf"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.sim/sim_1/impl/timing/xsim/RegisterFileTB_time_impl.v
+INFO: [SIM-utils-37] SDF generated:C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.sim/sim_1/impl/timing/xsim/RegisterFileTB_time_impl.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'RegisterFileTB' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.sim/sim_1/impl/timing/xsim'
+"xvlog --incr --relax -prj RegisterFileTB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.sim/sim_1/impl/timing/xsim/RegisterFileTB_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-311] analyzing module register_module
+INFO: [VRFC 10-311] analyzing module register_module_0
+INFO: [VRFC 10-311] analyzing module register_module_1
+INFO: [VRFC 10-311] analyzing module register_module_2
+INFO: [VRFC 10-311] analyzing module register_module_3
+INFO: [VRFC 10-311] analyzing module register_module_4
+INFO: [VRFC 10-311] analyzing module register_module_5
+INFO: [VRFC 10-311] analyzing module register_module_6
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj RegisterFileTB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/sim_1/new/RegisterFileTB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RegisterFileTB'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.sim/sim_1/impl/timing/xsim'
+"xelab -wto 82bc7047c6b74fb682e07f2ea87a2de0 --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot RegisterFileTB_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.RegisterFileTB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 82bc7047c6b74fb682e07f2ea87a2de0 --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot RegisterFileTB_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.RegisterFileTB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "RegisterFileTB_time_impl.sdf", for root module "RegisterFileTB/UUT".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "RegisterFileTB_time_impl.sdf", for root module "RegisterFileTB/UUT".
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.FDRE(IS_C_INVERTED=1'b1)
+Compiling module xil_defaultlib.register_module
+Compiling module xil_defaultlib.register_module_0
+Compiling module xil_defaultlib.register_module_1
+Compiling module simprims_ver.MUXF7
+Compiling module simprims_ver.LUT6
+Compiling module xil_defaultlib.register_module_2
+Compiling module xil_defaultlib.register_module_3
+Compiling module xil_defaultlib.register_module_4
+Compiling module xil_defaultlib.register_module_5
+Compiling module xil_defaultlib.register_module_6
+Compiling module xil_defaultlib.register_file
+Compiling architecture tb of entity xil_defaultlib.registerfiletb
+Built simulation snapshot RegisterFileTB_time_impl
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Dhruv/Desktop/DSD -notrace
+couldn't read file "C:/Users/Dhruv/Desktop/DSD": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Thu Sep 17 10:46:33 2020...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2129.148 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.sim/sim_1/impl/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "RegisterFileTB_time_impl -key {Post-Implementation:sim_1:Timing:RegisterFileTB} -tclbatch {RegisterFileTB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source RegisterFileTB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Error in Operation
+Time: 520 ns  Iteration: 0  Process: /RegisterFileTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/sim_1/new/RegisterFileTB.vhd
+Error: Error in Operation
+Time: 660 ns  Iteration: 0  Process: /RegisterFileTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/sim_1/new/RegisterFileTB.vhd
+Error: Error in Operation
+Time: 660 ns  Iteration: 0  Process: /RegisterFileTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/sim_1/new/RegisterFileTB.vhd
+Error: Error in Operation
+Time: 800 ns  Iteration: 0  Process: /RegisterFileTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/sim_1/new/RegisterFileTB.vhd
+Error: Error in Operation
+Time: 800 ns  Iteration: 0  Process: /RegisterFileTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/sim_1/new/RegisterFileTB.vhd
+Error: Error in Operation
+Time: 940 ns  Iteration: 0  Process: /RegisterFileTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/sim_1/new/RegisterFileTB.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'RegisterFileTB_time_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 2209.617 ; gain = 357.078
+launch_simulation -mode post-synthesis -type timing
+INFO: [Vivado 12-5682] Launching post-synthesis timing simulation in 'C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.sim/sim_1/synth/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-20] The target language is set to VHDL, it is not supported for simulation type 'timing', using Verilog instead.
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.sim/sim_1/synth/timing/xsim/RegisterFileTB_time_synth.v"
+INFO: [SIM-utils-27] Writing SDF file...
+INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.sim/sim_1/synth/timing/xsim/RegisterFileTB_time_synth.sdf"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.sim/sim_1/synth/timing/xsim/RegisterFileTB_time_synth.v
+INFO: [SIM-utils-37] SDF generated:C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.sim/sim_1/synth/timing/xsim/RegisterFileTB_time_synth.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'RegisterFileTB' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.sim/sim_1/synth/timing/xsim'
+"xvlog --incr --relax -prj RegisterFileTB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.sim/sim_1/synth/timing/xsim/RegisterFileTB_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-311] analyzing module register_module
+INFO: [VRFC 10-311] analyzing module register_module_0
+INFO: [VRFC 10-311] analyzing module register_module_1
+INFO: [VRFC 10-311] analyzing module register_module_2
+INFO: [VRFC 10-311] analyzing module register_module_3
+INFO: [VRFC 10-311] analyzing module register_module_4
+INFO: [VRFC 10-311] analyzing module register_module_5
+INFO: [VRFC 10-311] analyzing module register_module_6
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj RegisterFileTB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/sim_1/new/RegisterFileTB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RegisterFileTB'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.sim/sim_1/synth/timing/xsim'
+"xelab -wto 82bc7047c6b74fb682e07f2ea87a2de0 --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot RegisterFileTB_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.RegisterFileTB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 82bc7047c6b74fb682e07f2ea87a2de0 --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot RegisterFileTB_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.RegisterFileTB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "RegisterFileTB_time_synth.sdf", for root module "RegisterFileTB/UUT".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "RegisterFileTB_time_synth.sdf", for root module "RegisterFileTB/UUT".
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.FDRE(IS_C_INVERTED=1'b1)
+Compiling module xil_defaultlib.register_module
+Compiling module xil_defaultlib.register_module_0
+Compiling module xil_defaultlib.register_module_1
+Compiling module simprims_ver.MUXF7
+Compiling module simprims_ver.LUT6
+Compiling module xil_defaultlib.register_module_2
+Compiling module xil_defaultlib.register_module_3
+Compiling module xil_defaultlib.register_module_4
+Compiling module xil_defaultlib.register_module_5
+Compiling module xil_defaultlib.register_module_6
+Compiling module xil_defaultlib.register_file
+Compiling architecture tb of entity xil_defaultlib.registerfiletb
+Built simulation snapshot RegisterFileTB_time_synth
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Dhruv/Desktop/DSD -notrace
+couldn't read file "C:/Users/Dhruv/Desktop/DSD": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Thu Sep 17 10:47:32 2020...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 2233.332 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.sim/sim_1/synth/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "RegisterFileTB_time_synth -key {Post-Synthesis:sim_1:Timing:RegisterFileTB} -tclbatch {RegisterFileTB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source RegisterFileTB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Error in Operation
+Time: 520 ns  Iteration: 0  Process: /RegisterFileTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/sim_1/new/RegisterFileTB.vhd
+Error: Error in Operation
+Time: 660 ns  Iteration: 0  Process: /RegisterFileTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/sim_1/new/RegisterFileTB.vhd
+Error: Error in Operation
+Time: 660 ns  Iteration: 0  Process: /RegisterFileTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/sim_1/new/RegisterFileTB.vhd
+Error: Error in Operation
+Time: 800 ns  Iteration: 0  Process: /RegisterFileTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/sim_1/new/RegisterFileTB.vhd
+Error: Error in Operation
+Time: 800 ns  Iteration: 0  Process: /RegisterFileTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/sim_1/new/RegisterFileTB.vhd
+Error: Error in Operation
+Time: 940 ns  Iteration: 0  Process: /RegisterFileTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_2/Lab_2.srcs/sim_1/new/RegisterFileTB.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'RegisterFileTB_time_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 2233.332 ; gain = 23.715
+current_design impl_1
+report_utilization -name utilization_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+current_sim simulation_2
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 17 10:50:22 2020...

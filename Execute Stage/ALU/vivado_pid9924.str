@@ -1,0 +1,2364 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 9924
+License: Customer
+
+Current time: 	Thu Oct 15 14:08:28 EDT 2020
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 2560x1600
+Screen resolution (DPI): 200
+Available screens: 2
+Available disk space: 26 GB
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=24
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Dhruv
+User home directory: C:/Users/Dhruv
+User working directory: C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2019.1
+RDI_DATADIR: C:/Xilinx/Vivado/2019.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2019.1/bin
+
+Vivado preferences file location: C:/Users/Dhruv/AppData/Roaming/Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: C:/Users/Dhruv/AppData/Roaming/Xilinx/Vivado/2019.1/
+Vivado layouts directory: C:/Users/Dhruv/AppData/Roaming/Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/vivado.log
+Vivado journal file location: 	C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/vivado.jou
+Engine tmp dir: 	C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/.Xil/Vivado-9924-Macbook_Win
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2019.1
+XILINX_SDK: C:/Xilinx/SDK/2019.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2019.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2019.1
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 593 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// WARNING: HEventQueue.dispatchEvent() is taking  1244 ms.
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// by (cl):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Dhruv\Desktop\DSD II\Lab_4\ALU\ALU.xpr. Version: Vivado v2019.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.xpr} 
+// HMemoryUtils.trashcanNow. Engine heap size: 593 MB. GUI used memory: 78 MB. Current time: 10/15/20, 2:08:31 PM EDT
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 90 MB (+91406kb) [00:00:18]
+// [Engine Memory]: 664 MB (+545126kb) [00:00:18]
+// [GUI Memory]: 102 MB (+8314kb) [00:00:18]
+// [GUI Memory]: 126 MB (+19793kb) [00:00:19]
+// WARNING: HEventQueue.dispatchEvent() is taking  5040 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:11 . Memory (MB): peak = 715.672 ; gain = 85.680 
+// Project name: ALU; location: C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // by (cl)
+// [GUI Memory]: 133 MB (+969kb) [00:00:24]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cl):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'alu4' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design 
+// Tcl Message: INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvhdl --incr --relax -prj alu4_vhdl.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.sim/sim_1/behav/xsim' 
+// Tcl Message: "xelab -wto 5c9849b5cc2c4989a85bbd85829eb353 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot alu4_behav xil_defaultlib.alu4 -log elaborate.log" 
+// [Engine Memory]: 702 MB (+5091kb) [00:00:32]
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message: INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "alu4_behav -key {Behavioral:sim_1:Functional:alu4} -tclbatch {alu4.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2019.1 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// [GUI Memory]: 141 MB (+1300kb) [00:00:35]
+// WARNING: HEventQueue.dispatchEvent() is taking  1113 ms.
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// [Engine Memory]: 740 MB (+2828kb) [00:00:36]
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// Elapsed time: 10 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: source alu4.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 750 MB. GUI used memory: 121 MB. Current time: 10/15/20, 2:08:54 PM EDT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'alu4_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 781.121 ; gain = 58.855 
+// 'd' command handler elapsed time: 12 seconds
+dismissDialog("Run Simulation"); // e (cl)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B (f, cl)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 26 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 1); // aK (aH, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 5); // B (F, cl)
+// [GUI Memory]: 150 MB (+1408kb) [00:01:19]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, alu4(structural) (ALU4.vhd)]", 6, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, alu4(structural) (ALU4.vhd)]", 6, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, alu4(structural) (ALU4.vhd)]", 6); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, aluTB(tb) (aluTB.vhd)]", 7, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, aluTB(tb) (aluTB.vhd)]", 7, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, aluTB(tb) (aluTB.vhd)]", 7, true, false, false, false, true, false); // B (F, cl) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (an, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property top aluTB [get_filesets sim_1] 
+// by (cl):  Set as Top : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: set_property top_lib xil_defaultlib [get_filesets sim_1] 
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Set as Top"); // by (cl)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, aluTB(tb) (aluTB.vhd)]", 6); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, alu4(structural) (ALU4.vhd)]", 7, true); // B (F, cl) - Node
+// [GUI Memory]: 158 MB (+929kb) [00:01:56]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, alu4(structural) (ALU4.vhd)]", 7, true); // B (F, cl) - Node
+selectCodeEditor("aluTB.vhd", 190, 773); // cl (w, cl)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "alu", true); // l (aT, cl)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "alu"); // l (aT, cl)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "alu"); // l (aT, cl)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "alu"); // l (aT, cl)
+selectCodeEditor("aluTB.vhd", 53, 978); // cl (w, cl)
+selectCodeEditor("aluTB.vhd", 198, 976); // cl (w, cl)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "alu", true); // l (aT, cl)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "alu"); // l (aT, cl)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "alu"); // l (aT, cl)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "alu"); // l (aT, cl)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "alu"); // l (aT, cl)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "alu"); // l (aT, cl)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "alu"); // l (aT, cl)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "alu"); // l (aT, cl)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "alu"); // l (aT, cl)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "alu"); // l (aT, cl)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "alu"); // l (aT, cl)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "alu"); // l (aT, cl)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "alu"); // l (aT, cl)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "alu"); // l (aT, cl)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "alu"); // l (aT, cl)
+selectCodeEditor("aluTB.vhd", 539, 389); // cl (w, cl)
+// [Engine Memory]: 782 MB (+5398kb) [00:02:29]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cl):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// Tcl Message: launch_simulation 
+// Tcl Message: boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.sim/sim_1/behav/xsim/simulate.log" 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.sim/sim_1/behav/xsim/simulate.log" 
+// HOptionPane Error: 'boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ ALU.sim/sim_1/behav/xsim/simulate.log" (Run Simulation)'
+// 'd' command handler elapsed time: 3 seconds
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 1", 0); // k (j, cl)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+closeView(RDIResource.RDIViews_WAVEFORM_VIEWER, "Untitled 1"); // w
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cl):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// Tcl Message: launch_simulation 
+// Tcl Message: boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.sim/sim_1/behav/xsim/simulate.log" 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.sim/sim_1/behav/xsim/simulate.log" 
+// HOptionPane Error: 'boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ ALU.sim/sim_1/behav/xsim/simulate.log" (Run Simulation)'
+// 'd' command handler elapsed time: 5 seconds
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cl)
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - alu4", "DesignTask.SIMULATION");
+// A (cl): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// by (cl):  Close : addNotify
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+dismissDialog("Confirm Close"); // A (cl)
+// WARNING: HEventQueue.dispatchEvent() is taking  1141 ms.
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Close"); // by (cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cl):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'aluTB' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: "xvhdl --incr --relax -prj aluTB_vhdl.prj" INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sim_1/new/aluTB.vhd" into library xil_defaultlib INFO: [VRFC 10-3107] analyzing entity 'aluTB' 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.sim/sim_1/behav/xsim' 
+// Tcl Message: "xelab -wto 5c9849b5cc2c4989a85bbd85829eb353 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot aluTB_behav xil_defaultlib.aluTB -log elaborate.log" 
+// Tcl Message: Starting simulation data flow analysis Completed simulation data flow analysis 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Built simulation snapshot aluTB_behav  ****** Webtalk v2019.1 (64-bit)   **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019   **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.  source C:/Users/Dhruv/Desktop/DSD -notrace couldn't read file "C:/Users/Dhruv/Desktop/DSD": permission denied INFO: [Common 17-206] Exiting Webtalk at Thu Oct 15 14:11:39 2020... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 824.809 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "aluTB_behav -key {Behavioral:sim_1:Functional:aluTB} -tclbatch {aluTB.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2019.1 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// WARNING: HEventQueue.dispatchEvent() is taking  1182 ms.
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// Elapsed time: 13 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// Tcl Message: source aluTB.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 784 MB. GUI used memory: 101 MB. Current time: 10/15/20, 2:11:42 PM EDT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'aluTB_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 824.809 ; gain = 0.000 
+// 'd' command handler elapsed time: 14 seconds
+dismissDialog("Run Simulation"); // e (cl)
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B (f, cl)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Elapsed time: 33 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 1); // aK (aH, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, aluTB(tb) (aluTB.vhd)]", 6); // B (F, cl)
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, aluTB(tb) (aluTB.vhd)]", 6, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, aluTB(tb) (aluTB.vhd)]", 6, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectCodeEditor("aluTB.vhd", 401, 541); // cl (w, cl)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "full", true); // l (aT, cl)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "full"); // l (aT, cl)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "full"); // l (aT, cl)
+selectCodeEditor("aluTB.vhd", 401, 485); // cl (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU4.vhd", 0); // k (j, cl)
+selectCodeEditor("ALU4.vhd", 405, 571); // cl (w, cl)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "full", true); // l (aT, cl)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "full"); // l (aT, cl)
+// Elapsed time: 26 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu4(structural) (ALU4.vhd)]", 1); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu4(structural) (ALU4.vhd), addorsub : RippleCarryFullAdder(Behavioral) (Ripple_Carry_Full_Adder.vhd)]", 8, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu4(structural) (ALU4.vhd), addorsub : RippleCarryFullAdder(Behavioral) (Ripple_Carry_Full_Adder.vhd), gen_add[7].full_add : xil_defaultlib.FullAdder]", 16, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectCodeEditor("Ripple_Carry_Full_Adder.vhd", 202, 551); // cl (w, cl)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu4(structural) (ALU4.vhd), addorsub : RippleCarryFullAdder(Behavioral) (Ripple_Carry_Full_Adder.vhd)]", 8); // B (F, cl)
+selectCodeEditor("Ripple_Carry_Full_Adder.vhd", 188, 549); // cl (w, cl)
+// Elapsed time: 19 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "full"); // l (aT, cl)
+selectCodeEditor("Ripple_Carry_Full_Adder.vhd", 228, 646); // cl (w, cl)
+selectCodeEditor("Ripple_Carry_Full_Adder.vhd", 260, 947); // cl (w, cl)
+selectCodeEditor("Ripple_Carry_Full_Adder.vhd", 406, 909); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cl)
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - aluTB", "DesignTask.SIMULATION");
+// A (cl): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// by (cl):  Close : addNotify
+// TclEventType: WAVEFORM_CLOSE_WCFG
+dismissDialog("Confirm Close"); // A (cl)
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// PAPropertyPanels.initPanels (Ripple_Carry_Full_Adder.vhd) elapsed time: 0.2s
+// WARNING: HEventQueue.dispatchEvent() is taking  1884 ms.
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// Tcl Message: close_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 824.809 ; gain = 0.000 
+dismissDialog("Close"); // by (cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cl):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'aluTB' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvhdl --incr --relax -prj aluTB_vhdl.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd" into library xil_defaultlib INFO: [VRFC 10-3107] analyzing entity 'Full_Adder' INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/Ripple_Carry_Full_Adder.vhd" into library xil_defaultlib INFO: [VRFC 10-3107] analyzing entity 'RippleCarryFullAdder' 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.sim/sim_1/behav/xsim' 
+// Tcl Message: "xelab -wto 5c9849b5cc2c4989a85bbd85829eb353 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot aluTB_behav xil_defaultlib.aluTB -log elaborate.log" 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-99] Step results log file:'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 7 seconds
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+// a (cl): Critical Messages: addNotify
+// Elapsed time: 33 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cl)
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Ripple_Carry_Full_Adder.vhd", 3); // k (j, cl)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu4(structural) (ALU4.vhd)]", 1); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, aluTB(tb) (aluTB.vhd)]", 5); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, aluTB(tb) (aluTB.vhd), alu4_0 : alu4(structural) (ALU4.vhd)]", 6); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, aluTB(tb) (aluTB.vhd), alu4_0 : alu4(structural) (ALU4.vhd), addorsub : RippleCarryFullAdder(Behavioral) (Ripple_Carry_Full_Adder.vhd)]", 13); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, aluTB(tb) (aluTB.vhd), alu4_0 : alu4(structural) (ALU4.vhd), addorsub : RippleCarryFullAdder(Behavioral) (Ripple_Carry_Full_Adder.vhd), gen_add[1].full_add : Full_Adder(Behavior) (Full_Adder.vhd)]", 15, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, aluTB(tb) (aluTB.vhd), alu4_0 : alu4(structural) (ALU4.vhd), addorsub : RippleCarryFullAdder(Behavioral) (Ripple_Carry_Full_Adder.vhd), gen_add[1].full_add : Full_Adder(Behavior) (Full_Adder.vhd)]", 15, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectCodeEditor("Full_Adder.vhd", 125, 650); // cl (w, cl)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sum", true); // l (aT, cl)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "s", true); // l (aT, cl)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "s"); // l (aT, cl)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "s"); // l (aT, cl)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "s"); // l (aT, cl)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "s"); // l (aT, cl)
+selectCodeEditor("Full_Adder.vhd", 15, 784); // cl (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Ripple_Carry_Full_Adder.vhd", 3); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Full_Adder.vhd", 4); // k (j, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cl)
+closeTask("Project Manager", "Project Manager", "DesignTask.PROJECT_MANAGER");
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// A (cl): Close Project: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// by (cl):  Close Project : addNotify
+// TclEventType: PROJECT_CLOSE
+dismissDialog("Close Project"); // A (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 791 MB. GUI used memory: 104 MB. Current time: 10/15/20, 2:16:03 PM EDT
+// Tcl Message: close_project 
+dismissDialog("Close Project"); // by (cl)
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.xpr", 0); // q (O, cl)
+// Opening Vivado Project: C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.xpr. Version: Vivado v2019.1 
+// by (cl):  Open Project : addNotify
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  1294 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'. 
+// Project name: ALU; location: C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // by (cl)
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 3); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, aluTB(tb) (aluTB.vhd), alu4_0 : alu4(structural) (ALU4.vhd)]", 6); // B (F, cl)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, aluTB(tb) (aluTB.vhd), alu4_0 : alu4(structural) (ALU4.vhd)]", 6); // B (F, cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cl):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'aluTB' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: "xvhdl --incr --relax -prj aluTB_vhdl.prj" INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd" into library xil_defaultlib INFO: [VRFC 10-3107] analyzing entity 'Full_Adder' 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.sim/sim_1/behav/xsim' 
+// Tcl Message: "xelab -wto 5c9849b5cc2c4989a85bbd85829eb353 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot aluTB_behav xil_defaultlib.aluTB -log elaborate.log" 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Built simulation snapshot aluTB_behav 
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 827.773 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "aluTB_behav -key {Behavioral:sim_1:Functional:aluTB} -tclbatch {aluTB.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2019.1 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// Elapsed time: 10 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: source aluTB.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 791 MB. GUI used memory: 104 MB. Current time: 10/15/20, 2:16:38 PM EDT
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: Error: The result computed is wrong Time: 500 ns  Iteration: 0  Process: /aluTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sim_1/new/aluTB.vhd Error: The result computed is wrong Time: 600 ns  Iteration: 0  Process: /aluTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sim_1/new/aluTB.vhd Error: The result computed is wrong Time: 900 ns  Iteration: 0  Process: /aluTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sim_1/new/aluTB.vhd Error: The result computed is wrong Time: 1 us  Iteration: 0  Process: /aluTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sim_1/new/aluTB.vhd 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'aluTB_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 827.773 ; gain = 0.000 
+// 'd' command handler elapsed time: 11 seconds
+dismissDialog("Run Simulation"); // e (cl)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B (f, cl)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 108 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 1); // aK (aH, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu4(structural) (ALU4.vhd)]", 1); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu4(structural) (ALU4.vhd), multiply : Multiplier(Behavioral) (Multiplier.vhd)]", 9, true); // B (F, cl) - Node
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu4(structural) (ALU4.vhd), multiply : Multiplier(Behavioral) (Multiplier.vhd)]", 9, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu4(structural) (ALU4.vhd), multiply : Multiplier(Behavioral) (Multiplier.vhd), rows[1].columns[8].row1_center_col.adder_mid : xil_defaultlib.FullAdder]", 18, false, false, false, false, false, true); // B (F, cl) - Double Click
+// Elapsed time: 58 seconds
+selectCodeEditor("Multiplier.vhd", 183, 275); // cl (w, cl)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "adder", true); // l (aT, cl)
+selectCodeEditor("Multiplier.vhd", 444, 978); // cl (w, cl)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "adder", true); // l (aT, cl)
+selectCodeEditor("Multiplier.vhd", 374, 984); // cl (w, cl)
+selectCodeEditor("Multiplier.vhd", 398, 406); // cl (w, cl)
+selectCodeEditor("Multiplier.vhd", 488, 720); // cl (w, cl)
+selectCodeEditor("Multiplier.vhd", 491, 409); // cl (w, cl)
+selectCodeEditor("Multiplier.vhd", 472, 715); // cl (w, cl)
+selectCodeEditor("Multiplier.vhd", 472, 411); // cl (w, cl)
+selectCodeEditor("Multiplier.vhd", 472, 411, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("Multiplier.vhd", 472, 411); // cl (w, cl)
+selectCodeEditor("Multiplier.vhd", 472, 411); // cl (w, cl)
+selectCodeEditor("Multiplier.vhd", 598, 415); // cl (w, cl)
+selectCodeEditor("Multiplier.vhd", 598, 415, false, false, false, false, true); // cl (w, cl) - Double Click
+// Elapsed time: 11 seconds
+selectComboBox("FindAndReplaceDialog.cl_Replace with:", "Full_Adder", -1); // JComboBox (cl, FindAndReplaceDialog)
+selectButton("FindAndReplaceDialog.cl_Find", "Find"); // JButton (cl, FindAndReplaceDialog)
+selectCodeEditor("Multiplier.vhd", 440, 490); // cl (w, cl)
+selectCodeEditor("Multiplier.vhd", 447, 184); // cl (w, cl)
+selectCodeEditor("Multiplier.vhd", 641, 478); // cl (w, cl)
+selectCodeEditor("Multiplier.vhd", 635, 192); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// by (cl):  Close : addNotify
+selectButton("OptionPane.button", "Yes"); // JButton (A, G)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// e (cl):  Run Simulation : addNotify
+dismissDialog("Close"); // by (cl)
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'aluTB' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: "xvhdl --incr --relax -prj aluTB_vhdl.prj" INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/Multiplier.vhd" into library xil_defaultlib INFO: [VRFC 10-3107] analyzing entity 'Multiplier' 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.sim/sim_1/behav/xsim' 
+// Tcl Message: "xelab -wto 5c9849b5cc2c4989a85bbd85829eb353 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot aluTB_behav xil_defaultlib.aluTB -log elaborate.log" 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Built simulation snapshot aluTB_behav 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "aluTB_behav -key {Behavioral:sim_1:Functional:aluTB} -tclbatch {aluTB.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2019.1 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// WARNING: HEventQueue.dispatchEvent() is taking  1086 ms.
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// Tcl Message: source aluTB.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 795 MB. GUI used memory: 108 MB. Current time: 10/15/20, 2:21:16 PM EDT
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: Error: The result computed is wrong Time: 600 ns  Iteration: 0  Process: /aluTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sim_1/new/aluTB.vhd Error: The result computed is wrong Time: 900 ns  Iteration: 0  Process: /aluTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sim_1/new/aluTB.vhd Error: The result computed is wrong Time: 1 us  Iteration: 0  Process: /aluTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sim_1/new/aluTB.vhd 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'aluTB_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 827.773 ; gain = 0.000 
+// 'd' command handler elapsed time: 13 seconds
+dismissDialog("Run Simulation"); // e (cl)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B (f, cl)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 795 MB. GUI used memory: 108 MB. Current time: 10/15/20, 2:21:28 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 795 MB. GUI used memory: 108 MB. Current time: 10/15/20, 2:21:29 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Multiplier.vhd", 0); // k (j, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 796 MB. GUI used memory: 108 MB. Current time: 10/15/20, 2:21:46 PM EDT
+// Elapsed time: 26 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 4", 1); // k (j, cl)
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cl)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis]", 3); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// f (cl): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// by (cl):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cl)
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// [GUI Memory]: 166 MB (+596kb) [00:14:10]
+// Tcl Message: [Thu Oct 15 14:22:27 2020] Launched synth_1... Run output will be captured here: C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // by (cl)
+// TclEventType: RUN_STATUS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 806 MB. GUI used memory: 119 MB. Current time: 10/15/20, 2:22:29 PM EDT
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ah (cl): Synthesis Completed: addNotify
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 806 MB. GUI used memory: 108 MB. Current time: 10/15/20, 2:23:47 PM EDT
+// Elapsed time: 80 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Synthesis Completed"); // ah (cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_TIMING, "Run Post-Synthesis Timing Simulation"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_TIMING
+// TclEventType: FILE_SET_CHANGE
+// e (cl):  Run Simulation : addNotify
+selectButton("OptionPane.button", "Yes"); // JButton (A, G)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation -mode post-synthesis -type timing 
+// Tcl Message: INFO: [Vivado 12-5682] Launching post-synthesis timing simulation in 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.sim/sim_1/synth/timing/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-20] The target language is set to VHDL, it is not supported for simulation type 'timing', using Verilog instead. 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7a35tcpg236-1 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 1,100 MB (+291750kb) [00:15:51]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,100 MB. GUI used memory: 109 MB. Current time: 10/15/20, 2:24:08 PM EDT
+// [Engine Memory]: 1,222 MB (+69958kb) [00:15:53]
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: C:/Xilinx/Vivado/2019.1/data/parts/xilinx/artix7/devint/artix7/xc7a35t/xc7a35t.xgd; ZipEntry: xc7a35t_detail.xgd elapsed time: 1.6s
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 1.7s
+// [GUI Memory]: 177 MB (+2456kb) [00:15:54]
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  2871 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a35tcpg236-1 INFO: [Netlist 29-17] Analyzing 31 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2019.1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/constrs_1/new/adc4.xdc] Finished Parsing XDC File [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/constrs_1/new/adc4.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1149.719 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Device view-level: 0.0
+// Tcl Message: open_run: Time (s): cpu = 00:00:27 ; elapsed = 00:00:17 . Memory (MB): peak = 1303.477 ; gain = 460.664 
+// Tcl Message: INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'... INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.sim/sim_1/synth/timing/xsim/aluTB_time_synth.v" 
+// Tcl Message: write_verilog: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1347.906 ; gain = 29.742 
+// Tcl Message: INFO: [SIM-utils-27] Writing SDF file... INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.sim/sim_1/synth/timing/xsim/aluTB_time_synth.sdf" 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,492 MB. GUI used memory: 147 MB. Current time: 10/15/20, 2:24:26 PM EDT
+// RouteApi::initDelayMediator elapsed time: 13.9s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: INFO: [SIM-utils-36] Netlist generated:C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.sim/sim_1/synth/timing/xsim/aluTB_time_synth.v INFO: [SIM-utils-37] SDF generated:C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.sim/sim_1/synth/timing/xsim/aluTB_time_synth.sdf INFO: [SIM-utils-54] Inspecting design source files for 'aluTB' in fileset 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.sim/sim_1/synth/timing/xsim' 
+// Tcl Message: "xvlog --incr --relax -prj aluTB_vlog.prj" 
+// Tcl Message: INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.sim/sim_1/synth/timing/xsim/aluTB_time_synth.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module alu4 INFO: [VRFC 10-311] analyzing module glbl "xvhdl --incr --relax -prj aluTB_vhdl.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sim_1/new/aluTB.vhd" into library xil_defaultlib INFO: [VRFC 10-3107] analyzing entity 'aluTB' 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '4' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.sim/sim_1/synth/timing/xsim' 
+// Tcl Message: "xelab -wto 5c9849b5cc2c4989a85bbd85829eb353 --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot aluTB_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.aluTB xil_defaultlib.glbl -log elaborate.log" 
+// Tcl Message: Vivado Simulator 2019.1 Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 5c9849b5cc2c4989a85bbd85829eb353 --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot aluTB_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.aluTB xil_defaultlib.glbl -log elaborate.log  Using 2 slave threads. Starting static elaboration Completed static elaboration 
+// Tcl Message: Starting simulation data flow analysis 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,673 MB. GUI used memory: 147 MB. Current time: 10/15/20, 2:24:41 PM EDT
+// Tcl Message: Built simulation snapshot aluTB_time_synth 
+// TclEventType: LAUNCH_SIM
+// [Engine Memory]: 1,673 MB (+409347kb) [00:16:31]
+// Tcl Message:  ****** Webtalk v2019.1 (64-bit)   **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019   **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.  source C:/Users/Dhruv/Desktop/DSD -notrace couldn't read file "C:/Users/Dhruv/Desktop/DSD": permission denied INFO: [Common 17-206] Exiting Webtalk at Thu Oct 15 14:24:47 2020... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:03 ; elapsed = 00:00:16 . Memory (MB): peak = 1766.422 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '16' seconds 
+// Tcl Message: INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.sim/sim_1/synth/timing/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "aluTB_time_synth -key {Post-Synthesis:sim_1:Timing:aluTB} -tclbatch {aluTB.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2019.1 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// [GUI Memory]: 199 MB (+13934kb) [00:16:33]
+// WARNING: HEventQueue.dispatchEvent() is taking  1445 ms.
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// Elapsed time: 54 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Tcl Message: source aluTB.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 1,699 MB. GUI used memory: 179 MB. Current time: 10/15/20, 2:24:52 PM EDT
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// Tcl Message: # run 1000ns 
+// Tcl Message: Error: The result computed is wrong Time: 600 ns  Iteration: 0  Process: /aluTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sim_1/new/aluTB.vhd Error: The result computed is wrong Time: 900 ns  Iteration: 0  Process: /aluTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sim_1/new/aluTB.vhd Error: The result computed is wrong Time: 1 us  Iteration: 0  Process: /aluTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sim_1/new/aluTB.vhd 
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'aluTB_time_synth' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:01:04 ; elapsed = 00:00:57 . Memory (MB): peak = 1831.629 ; gain = 988.816 
+// 'd' command handler elapsed time: 58 seconds
+dismissDialog("Run Simulation"); // e (cl)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B (f, cl)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0); // u (O, cl)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15); // u (O, cl)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15); // u (O, cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (cl): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// by (cl):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cl)
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1836.398 ; gain = 0.000 
+// Tcl Message: INFO: [Timing 38-480] Writing timing data to binary archive. 
+// Tcl Message: Writing placer database... Writing XDEF routing. Writing XDEF routing logical nets. Writing XDEF routing special nets. 
+// Tcl Message: Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.072 . Memory (MB): peak = 1858.480 ; gain = 22.082 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Oct 15 14:25:11 2020] Launched impl_1... Run output will be captured here: C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.runs/impl_1/runme.log 
+// [GUI Memory]: 210 MB (+1162kb) [00:16:55]
+dismissDialog("Starting Design Runs"); // by (cl)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,754 MB. GUI used memory: 180 MB. Current time: 10/15/20, 2:25:13 PM EDT
+// TclEventType: RUN_STATUS_CHANGE
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1007 ms.
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ah (cl): Implementation Failed: addNotify
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// [GUI Memory]: 221 MB (+55kb) [00:17:50]
+// Elapsed time: 75 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,754 MB. GUI used memory: 155 MB. Current time: 10/15/20, 2:26:31 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,754 MB. GUI used memory: 158 MB. Current time: 10/15/20, 2:26:36 PM EDT
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (O, cl)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0); // u (O, cl)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// D (cl): Settings: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2615 ms.
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, Synthesis]", 3, false); // L (E, D)
+// [GUI Memory]: 236 MB (+4306kb) [00:18:36]
+// [GUI Memory]: 251 MB (+2793kb) [00:18:36]
+// [GUI Memory]: 266 MB (+2959kb) [00:18:46]
+// [Engine Memory]: 1,765 MB (+8943kb) [00:18:46]
+// [GUI Memory]: 288 MB (+8912kb) [00:18:49]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,845 MB. GUI used memory: 225 MB. Current time: 10/15/20, 2:27:06 PM EDT
+// [Engine Memory]: 1,865 MB (+11751kb) [00:18:51]
+// [Engine Memory]: 1,963 MB (+4683kb) [00:18:54]
+// [GUI Memory]: 304 MB (+1790kb) [00:18:55]
+// [GUI Memory]: 320 MB (+388kb) [00:18:56]
+// [GUI Memory]: 339 MB (+4042kb) [00:18:58]
+// Elapsed time: 30 seconds
+selectButton(RDIResource.BaseDialog_APPLY, "Apply"); // a (D)
+// A (cl): Create New Run: addNotify
+// [GUI Memory]: 372 MB (+16618kb) [00:19:00]
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// b (cl): Create Run: addNotify
+dismissDialog("Create New Run"); // A (cl)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (b)
+dismissDialog("Create Run"); // b (cl)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (D)
+// A (cl): Create New Run: addNotify
+selectButton(RDIResource.BaseDialog_NO, "No"); // a (A)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_OPTIONS_MODIFIED
+// Tcl Message: set_property -name {STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS} -value {-mode out_of_context} -objects [get_runs synth_1] 
+dismissDialog("Create New Run"); // A (cl)
+dismissDialog("Settings"); // D (cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// A (cl): Synthesis is Out-of-date: addNotify
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// by (cl):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (cl)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cl): Launch Runs: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 2,060 MB. GUI used memory: 300 MB. Current time: 10/15/20, 2:27:34 PM EDT
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// by (cl):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cl)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Oct 15 14:27:37 2020] Launched synth_1... Run output will be captured here: C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.runs/synth_1/runme.log [Thu Oct 15 14:27:37 2020] Launched impl_1... Run output will be captured here: C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Starting Design Runs"); // by (cl)
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: RUN_STATUS_CHANGE
+// Waveform: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1096 ms.
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ah (cl): Implementation Failed: addNotify
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 135 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,060 MB. GUI used memory: 294 MB. Current time: 10/15/20, 2:29:56 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// Elapsed time: 19 seconds
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, true); // g (aR, cl): TRUE
+// Elapsed time: 425 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design]", 7, true); // ah (O, cl) - Node
+// Elapsed time: 11 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu4(structural) (ALU4.vhd), multiply : Multiplier(Behavioral) (Multiplier.vhd)]", 9); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 10); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, adc4.xdc]", 12, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, adc4.xdc]", 12, false, false, false, false, false, true); // B (F, cl) - Double Click
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// Elapsed time: 47 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, adc4.xdc]", 12, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, adc4.xdc]", 12, false, false, false, false, true, false); // B (F, cl) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (an, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_DISABLE, "Disable File"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_SRC_DISABLE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property is_enabled false [get_files  {{C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/constrs_1/new/adc4.xdc}}] 
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// A (cl): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// by (cl):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (cl)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cl): Launch Runs: addNotify
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// by (cl):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cl)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: [Thu Oct 15 14:38:35 2020] Launched synth_1... Run output will be captured here: C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.runs/synth_1/runme.log [Thu Oct 15 14:38:35 2020] Launched impl_1... Run output will be captured here: C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Starting Design Runs"); // by (cl)
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 640ms to process. Increasing delay to 3000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// ah (cl): Implementation Completed: addNotify
+// Elapsed time: 177 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Implementation Completed"); // ah (cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_IMPLEMENTATION_TIMING, "Run Post-Implementation Timing Simulation"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_IMPLEMENTATION_TIMING
+// TclEventType: FILE_SET_CHANGE
+// e (cl):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Yes"); // JButton (A, G)
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation -mode post-implementation -type timing 
+// Tcl Message: INFO: [Vivado 12-5682] Launching post-implementation timing simulation in 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.sim/sim_1/impl/timing/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-20] The target language is set to VHDL, it is not supported for simulation type 'timing', using Verilog instead. 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,060 MB. GUI used memory: 296 MB. Current time: 10/15/20, 2:41:42 PM EDT
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  2066 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 31 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2019.1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.239 . Memory (MB): peak = 2703.184 ; gain = 0.902 
+// Tcl Message: Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.239 . Memory (MB): peak = 2703.184 ; gain = 0.902 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2703.387 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Device view-level: 0.0
+// Tcl Message: open_run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2716.391 ; gain = 45.668 
+// Tcl Message: INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'... INFO: [SIM-utils-32] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.sim/sim_1/impl/timing/xsim/aluTB_time_impl.v" INFO: [SIM-utils-34] Writing SDF file... INFO: [SIM-utils-35] write_sdf -mode timesim -process_corner slow -force -file "C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.sim/sim_1/impl/timing/xsim/aluTB_time_impl.sdf" 
+// Tcl Message: INFO: [SIM-utils-36] Netlist generated:C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.sim/sim_1/impl/timing/xsim/aluTB_time_impl.v INFO: [SIM-utils-37] SDF generated:C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.sim/sim_1/impl/timing/xsim/aluTB_time_impl.sdf INFO: [SIM-utils-54] Inspecting design source files for 'aluTB' in fileset 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.sim/sim_1/impl/timing/xsim' 
+// Tcl Message: "xvlog --incr --relax -prj aluTB_vlog.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.sim/sim_1/impl/timing/xsim/aluTB_time_impl.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module alu4 INFO: [VRFC 10-311] analyzing module glbl "xvhdl --incr --relax -prj aluTB_vhdl.prj" INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sim_1/new/aluTB.vhd" into library xil_defaultlib INFO: [VRFC 10-3107] analyzing entity 'aluTB' 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '3' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.sim/sim_1/impl/timing/xsim' 
+// Tcl Message: "xelab -wto 5c9849b5cc2c4989a85bbd85829eb353 --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot aluTB_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.aluTB xil_defaultlib.glbl -log elaborate.log" 
+// Tcl Message: Vivado Simulator 2019.1 Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 5c9849b5cc2c4989a85bbd85829eb353 --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot aluTB_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.aluTB xil_defaultlib.glbl -log elaborate.log  Using 2 slave threads. Starting static elaboration Completed static elaboration 
+// Tcl Message: Built simulation snapshot aluTB_time_impl 
+// TclEventType: LAUNCH_SIM
+// Tcl Message:  ****** Webtalk v2019.1 (64-bit)   **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019   **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.  source C:/Users/Dhruv/Desktop/DSD -notrace couldn't read file "C:/Users/Dhruv/Desktop/DSD": permission denied INFO: [Common 17-206] Exiting Webtalk at Thu Oct 15 14:42:05 2020... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 2750.754 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '15' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.sim/sim_1/impl/timing/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "aluTB_time_impl -key {Post-Implementation:sim_1:Timing:aluTB} -tclbatch {aluTB.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2019.1 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// WARNING: HEventQueue.dispatchEvent() is taking  1331 ms.
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// Elapsed time: 28 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Tcl Message: source aluTB.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// Tcl Message: # run 1000ns 
+// Tcl Message: Error: The result computed is wrong Time: 600 ns  Iteration: 0  Process: /aluTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sim_1/new/aluTB.vhd 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 2,060 MB. GUI used memory: 339 MB. Current time: 10/15/20, 2:42:10 PM EDT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Error: The result computed is wrong Time: 900 ns  Iteration: 0  Process: /aluTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sim_1/new/aluTB.vhd Error: The result computed is wrong Time: 1 us  Iteration: 0  Process: /aluTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sim_1/new/aluTB.vhd 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'aluTB_time_impl' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 2750.754 ; gain = 80.031 
+// 'd' command handler elapsed time: 34 seconds
+dismissDialog("Run Simulation"); // e (cl)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B (f, cl)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 37 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (O, cl)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator]", 1); // u (O, cl)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// D (cl): Settings: addNotify
+// Elapsed time: 10 seconds
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, Synthesis]", 3, false); // L (E, D)
+// [GUI Memory]: 448 MB (+59564kb) [00:34:45]
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (D)
+// A (cl): Create New Run: addNotify
+selectButton(RDIResource.BaseDialog_NO, "No"); // a (A)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_OPTIONS_MODIFIED
+// Tcl Message: set_property {STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS} {} [get_runs synth_1] 
+dismissDialog("Create New Run"); // A (cl)
+dismissDialog("Settings"); // D (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,060 MB. GUI used memory: 367 MB. Current time: 10/15/20, 2:43:19 PM EDT
+// WARNING: HEventQueue.dispatchEvent() is taking  1535 ms.
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTab((HResource) null, (HResource) null, "Sources", 1); // aK (aH, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu4(structural) (ALU4.vhd)]", 1, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu4(structural) (ALU4.vhd)]", 1, true, false, false, false, true, false); // B (F, cl) - Popup Trigger - Node
+selectMenuItem(PAResourceQtoS.SrcMenu_OPEN_SELECTED_SOURCE_FILES, "Open File"); // ah (an, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("ALU4.vhd", 371, 609); // cl (w, cl)
+selectCodeEditor("ALU4.vhd", 371, 609, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("ALU4.vhd", 377, 611); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, adc4.xdc]", 12, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, adc4.xdc]", 12, false, false, false, false, true, false); // B (F, cl) - Popup Trigger
+// Elapsed time: 27 seconds
+selectCodeEditor("ALU4.vhd", 242, 581); // cl (w, cl)
+selectCodeEditor("ALU4.vhd", 344, 576); // cl (w, cl)
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, adc4.xdc]", 12, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, adc4.xdc]", 12, false, false, false, false, true, false); // B (F, cl) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_ENABLE, "Enable File"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_SRC_ENABLE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property is_enabled true [get_files  {{C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/constrs_1/new/adc4.xdc}}] 
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cl): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// by (cl):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cl)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cl): Launch Runs: addNotify
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cx' command handler elapsed time: 4 seconds
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cl)
+// by (cl):  Generate Bitstream : addNotify
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Thu Oct 15 14:45:10 2020] Launched synth_1... Run output will be captured here: C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.runs/synth_1/runme.log [Thu Oct 15 14:45:10 2020] Launched impl_1... Run output will be captured here: C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // by (cl)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ah (cl): Synthesis Failed: addNotify
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 30 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (cl)
+// Elapsed time: 13 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-549] port width mismatch for port 'A': port width = 32, actual width = 4 [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/ALU4.vhd:112]. ]", 1, true); // ah (O, cl) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Dhruv\Desktop\DSD II\Lab_4\ALU\ALU.srcs\sources_1\new\ALU4.vhd;-;;-;16;-;line;-;112;-;;-;16;-;"); // ah (O, cl)
+selectCodeEditor("ALU4.vhd", 398, 310); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("ALU4.vhd", 397, 449); // cl (w, cl)
+selectCodeEditor("ALU4.vhd", 406, 570); // cl (w, cl)
+selectCodeEditor("ALU4.vhd", 392, 710); // cl (w, cl)
+selectCodeEditor("ALU4.vhd", 392, 710, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("ALU4.vhd", 386, 843); // cl (w, cl)
+selectCodeEditor("ALU4.vhd", 386, 843); // cl (w, cl)
+selectCodeEditor("ALU4.vhd", 386, 843, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("ALU4.vhd", 391, 970); // cl (w, cl)
+selectCodeEditor("ALU4.vhd", 391, 970, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("ALU4.vhd", 380, 480); // cl (w, cl)
+selectCodeEditor("ALU4.vhd", 380, 480, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("ALU4.vhd", 370, 619); // cl (w, cl)
+selectCodeEditor("ALU4.vhd", 370, 619, false, false, false, false, true); // cl (w, cl) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cl): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// by (cl):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A (cl)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cl): Launch Runs: addNotify
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cl)
+// by (cl):  Generate Bitstream : addNotify
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Thu Oct 15 14:46:37 2020] Launched synth_1... Run output will be captured here: C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.runs/synth_1/runme.log [Thu Oct 15 14:46:37 2020] Launched impl_1... Run output will be captured here: C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // by (cl)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// ah (cl): Implementation Failed: addNotify
+// Elapsed time: 103 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (cl)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// Elapsed time: 20 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu4(structural) (ALU4.vhd), multiply : Multiplier(Behavioral) (Multiplier.vhd)]", 9, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu4(structural) (ALU4.vhd), multiply : Multiplier(Behavioral) (Multiplier.vhd)]", 9, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu4(structural) (ALU4.vhd), multiply : Multiplier(Behavioral) (Multiplier.vhd)]", 9); // B (F, cl)
+selectCodeEditor("Multiplier.vhd", 418, 346); // cl (w, cl)
+// Elapsed time: 93 seconds
+selectCodeEditor("Multiplier.vhd", 792, 610); // cl (w, cl)
+selectCodeEditor("Multiplier.vhd", 866, 641); // cl (w, cl)
+// Elapsed time: 40 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net multiply/sum_sig[1][0] has multiple drivers: out1_OBUF[1]_inst_i_8/O, and out1_OBUF[1]_inst_i_9/O.. ]", 11, false); // ah (O, cl)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net multiply/sum_sig[1][0] has multiple drivers: out1_OBUF[1]_inst_i_8/O, and out1_OBUF[1]_inst_i_9/O.. ]", 11, false, false, false, false, false, true); // ah (O, cl) - Double Click
+// Elapsed time: 95 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, cl) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// A (cl): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// by (cl):  Open Elaborated Design : addNotify
+// TclEventType: ELABORATE_START
+dismissDialog("Elaborate Design"); // A (cl)
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a35tcpg236-1 Top: alu4 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  1035 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,060 MB. GUI used memory: 367 MB. Current time: 10/15/20, 2:53:01 PM EDT
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1500 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2986.215 ; gain = 145.914 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'alu4' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/ALU4.vhd:26] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  	Parameter D bound to: 2 - type: integer  	Parameter N bound to: 4 - type: integer  	Parameter D bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'sllN' declared at 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/sllN.vhd:18' bound to instance 'sll_comp' of component 'sllN' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/ALU4.vhd:110] INFO: [Synth 8-638] synthesizing module 'sllN' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/sllN.vhd:27] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  	Parameter D bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'sllN' (1#1) [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/sllN.vhd:27] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  	Parameter D bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'srlN' declared at 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/srlN.vhd:18' bound to instance 'srl_comp' of component 'srlN' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/ALU4.vhd:114] INFO: [Synth 8-638] synthesizing module 'srlN' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/srlN.vhd:25] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  	Parameter D bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'srlN' (2#1) [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/srlN.vhd:25] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  	Parameter D bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'sraN' declared at 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/sraN.vhd:19' bound to instance 'sra_comp' of component 'sraN' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/ALU4.vhd:118] INFO: [Synth 8-638] synthesizing module 'sraN' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/sraN.vhd:26] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  	Parameter D bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'sraN' (3#1) [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/sraN.vhd:26] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'alu_and' declared at 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/alu_and.vhd:20' bound to instance 'and_comp' of component 'alu_and' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/ALU4.vhd:122] INFO: [Synth 8-638] synthesizing module 'alu_and' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/alu_and.vhd:30] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'alu_and' (4#1) [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/alu_and.vhd:30] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'alu_or' declared at 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/alu_or.vhd:18' bound to instance 'or_comp' of component 'alu_or' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/ALU4.vhd:126] INFO: [Synth 8-638] synthesizing module 'alu_or' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/alu_or.vhd:28] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'alu_or' (5#1) [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/alu_or.vhd:28] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'alu_xor' declared at 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/alu_xor.vhd:19' bound to instance 'xor_comp' of component 'alu_xor' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/ALU4.vhd:130] INFO: [Synth 8-638] synthesizing module 'alu_xor' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/alu_xor.vhd:29] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'alu_xor' (6#1) [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/alu_xor.vhd:29] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'RippleCarryFullAdder' declared at 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/Ripple_Carry_Full_Adder.vhd:17' bound to instance 'addorsub' of component 'RippleCarryFullAdder' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/ALU4.vhd:134] INFO: [Synth 8-638] synthesizing module 'RippleCarryFullAdder' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/Ripple_Carry_Full_Adder.vhd:27] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'Multiplier' declared at 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/Multiplier.vhd:20' bound to instance 'multiply' of component 'Multiplier' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/ALU4.vhd:138] INFO: [Synth 8-638] synthesizing module 'Multiplier' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/Multiplier.vhd:29] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'Multiplier' (9#1) [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/Multiplier.vhd:29] INFO: [Synth 8-256] done synthesizing module 'alu4' (10#1) [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/ALU4.vhd:26] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3024.754 ; gain = 184.453 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3043.664 ; gain = 203.363 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3043.664 ; gain = 203.363 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/constrs_1/new/adc4.xdc] 
+// Tcl Message: Finished Parsing XDC File [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/constrs_1/new/adc4.xdc] Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3155.043 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 3155.043 ; gain = 314.742 
+// Tcl Message: 39 Infos, 10 Warnings, 8 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 3155.043 ; gain = 314.742 
+// 'dR' command handler elapsed time: 11 seconds
+// S (cl): Critical Messages: addNotify
+// Elapsed time: 10 seconds
+dismissDialog("Open Elaborated Design"); // by (cl)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (S)
+dismissDialog("Critical Messages"); // S (cl)
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Schematic_zoom_in"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Schematic_zoom_in"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // G (aH, cl)
+// Elapsed time: 67 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Multiplier.vhd", 2); // k (j, cl)
+selectCodeEditor("Multiplier.vhd", 307, 640); // cl (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Multiplier.vhd", 2); // k (j, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("Multiplier.vhd", 322, 681); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("Multiplier.vhd", 322, 970); // cl (w, cl)
+selectCodeEditor("Multiplier.vhd", 229, 417); // cl (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Multiplier.vhd", 2); // k (j, cl)
+selectCodeEditor("Multiplier.vhd", 442, 603); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // B (f, cl)
+selectCodeEditor("Multiplier.vhd", 511, 613); // cl (w, cl)
+selectCodeEditor("Multiplier.vhd", 486, 651); // cl (w, cl)
+selectCodeEditor("Multiplier.vhd", 508, 646); // cl (w, cl)
+selectCodeEditor("Multiplier.vhd", 508, 646); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // B (f, cl)
+selectCodeEditor("Multiplier.vhd", 820, 378); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // B (f, cl)
+selectCodeEditor("Multiplier.vhd", 897, 408); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cl)
+selectButton(PAResourceQtoS.SchematicView_REGENERATE, "Schematic_refresh"); // B (f, cl)
+// Elapsed time: 12 seconds
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cS, cl)
+// by (cl):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3155.043 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,060 MB. GUI used memory: 370 MB. Current time: 10/15/20, 2:56:21 PM EDT
+// Engine heap size: 2,060 MB. GUI used memory: 371 MB. Current time: 10/15/20, 2:56:21 PM EDT
+// WARNING: HEventQueue.dispatchEvent() is taking  2454 ms.
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'alu4' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/ALU4.vhd:26] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  	Parameter D bound to: 2 - type: integer  	Parameter N bound to: 4 - type: integer  	Parameter D bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'sllN' declared at 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/sllN.vhd:18' bound to instance 'sll_comp' of component 'sllN' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/ALU4.vhd:110] INFO: [Synth 8-638] synthesizing module 'sllN' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/sllN.vhd:27] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  	Parameter D bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'sllN' (1#1) [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/sllN.vhd:27] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  	Parameter D bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'srlN' declared at 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/srlN.vhd:18' bound to instance 'srl_comp' of component 'srlN' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/ALU4.vhd:114] INFO: [Synth 8-638] synthesizing module 'srlN' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/srlN.vhd:25] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  	Parameter D bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'srlN' (2#1) [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/srlN.vhd:25] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  	Parameter D bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'sraN' declared at 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/sraN.vhd:19' bound to instance 'sra_comp' of component 'sraN' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/ALU4.vhd:118] INFO: [Synth 8-638] synthesizing module 'sraN' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/sraN.vhd:26] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  	Parameter D bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'sraN' (3#1) [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/sraN.vhd:26] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'alu_and' declared at 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/alu_and.vhd:20' bound to instance 'and_comp' of component 'alu_and' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/ALU4.vhd:122] INFO: [Synth 8-638] synthesizing module 'alu_and' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/alu_and.vhd:30] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'alu_and' (4#1) [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/alu_and.vhd:30] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'alu_or' declared at 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/alu_or.vhd:18' bound to instance 'or_comp' of component 'alu_or' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/ALU4.vhd:126] INFO: [Synth 8-638] synthesizing module 'alu_or' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/alu_or.vhd:28] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'alu_or' (5#1) [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/alu_or.vhd:28] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'alu_xor' declared at 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/alu_xor.vhd:19' bound to instance 'xor_comp' of component 'alu_xor' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/ALU4.vhd:130] INFO: [Synth 8-638] synthesizing module 'alu_xor' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/alu_xor.vhd:29] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'alu_xor' (6#1) [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/alu_xor.vhd:29] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'RippleCarryFullAdder' declared at 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/Ripple_Carry_Full_Adder.vhd:17' bound to instance 'addorsub' of component 'RippleCarryFullAdder' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/ALU4.vhd:134] INFO: [Synth 8-638] synthesizing module 'RippleCarryFullAdder' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/Ripple_Carry_Full_Adder.vhd:27] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'Multiplier' declared at 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/Multiplier.vhd:20' bound to instance 'multiply' of component 'Multiplier' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/ALU4.vhd:138] INFO: [Synth 8-638] synthesizing module 'Multiplier' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/Multiplier.vhd:29] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'Multiplier' (9#1) [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/Multiplier.vhd:29] INFO: [Synth 8-256] done synthesizing module 'alu4' (10#1) [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/ALU4.vhd:26] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3182.836 ; gain = 27.793 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3206.730 ; gain = 51.688 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3206.730 ; gain = 51.688 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,060 MB. GUI used memory: 369 MB. Current time: 10/15/20, 2:56:23 PM EDT
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  3723 ms.
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/constrs_1/new/adc4.xdc] 
+// Tcl Message: Finished Parsing XDC File [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/constrs_1/new/adc4.xdc] Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 3280.391 ; gain = 125.348 
+// S (cl): Critical Messages: addNotify
+// Elapsed time: 13 seconds
+dismissDialog("Reloading"); // by (cl)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (S)
+dismissDialog("Critical Messages"); // S (cl)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // G (aH, cl)
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Schematic_zoom_in"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Schematic_zoom_in"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Schematic_zoom_out"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Elapsed time: 91 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Multiplier.vhd", 2); // k (j, cl)
+selectCodeEditor("Multiplier.vhd", 343, 975); // cl (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cl)
+// Elapsed time: 52 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Multiplier.vhd", 2); // k (j, cl)
+selectCodeEditor("Multiplier.vhd", 576, 1169); // cl (w, cl)
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Multiplier.vhd", 2); // k (j, cl)
+selectCodeEditor("Multiplier.vhd", 237, 1281); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("Multiplier.vhd", 720, 1108); // cl (w, cl)
+// Elapsed time: 30 seconds
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cS, cl)
+// by (cl):  Reloading : addNotify
+// Tcl Message: refresh_design 
+// TclEventType: ELABORATE_START
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3280.391 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: DESIGN_REFRESH
+// Engine heap size: 2,060 MB. GUI used memory: 372 MB. Current time: 10/15/20, 3:00:31 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,060 MB. GUI used memory: 372 MB. Current time: 10/15/20, 3:00:31 PM EDT
+// WARNING: HEventQueue.dispatchEvent() is taking  2875 ms.
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'alu4' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/ALU4.vhd:26] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  	Parameter D bound to: 2 - type: integer  	Parameter N bound to: 4 - type: integer  	Parameter D bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'sllN' declared at 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/sllN.vhd:18' bound to instance 'sll_comp' of component 'sllN' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/ALU4.vhd:110] INFO: [Synth 8-638] synthesizing module 'sllN' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/sllN.vhd:27] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  	Parameter D bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'sllN' (1#1) [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/sllN.vhd:27] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  	Parameter D bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'srlN' declared at 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/srlN.vhd:18' bound to instance 'srl_comp' of component 'srlN' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/ALU4.vhd:114] INFO: [Synth 8-638] synthesizing module 'srlN' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/srlN.vhd:25] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  	Parameter D bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'srlN' (2#1) [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/srlN.vhd:25] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  	Parameter D bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'sraN' declared at 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/sraN.vhd:19' bound to instance 'sra_comp' of component 'sraN' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/ALU4.vhd:118] INFO: [Synth 8-638] synthesizing module 'sraN' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/sraN.vhd:26] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  	Parameter D bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'sraN' (3#1) [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/sraN.vhd:26] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'alu_and' declared at 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/alu_and.vhd:20' bound to instance 'and_comp' of component 'alu_and' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/ALU4.vhd:122] INFO: [Synth 8-638] synthesizing module 'alu_and' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/alu_and.vhd:30] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'alu_and' (4#1) [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/alu_and.vhd:30] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'alu_or' declared at 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/alu_or.vhd:18' bound to instance 'or_comp' of component 'alu_or' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/ALU4.vhd:126] INFO: [Synth 8-638] synthesizing module 'alu_or' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/alu_or.vhd:28] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'alu_or' (5#1) [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/alu_or.vhd:28] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'alu_xor' declared at 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/alu_xor.vhd:19' bound to instance 'xor_comp' of component 'alu_xor' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/ALU4.vhd:130] INFO: [Synth 8-638] synthesizing module 'alu_xor' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/alu_xor.vhd:29] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'alu_xor' (6#1) [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/alu_xor.vhd:29] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'RippleCarryFullAdder' declared at 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/Ripple_Carry_Full_Adder.vhd:17' bound to instance 'addorsub' of component 'RippleCarryFullAdder' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/ALU4.vhd:134] INFO: [Synth 8-638] synthesizing module 'RippleCarryFullAdder' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/Ripple_Carry_Full_Adder.vhd:27] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'Multiplier' declared at 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/Multiplier.vhd:20' bound to instance 'multiply' of component 'Multiplier' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/ALU4.vhd:138] INFO: [Synth 8-638] synthesizing module 'Multiplier' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/Multiplier.vhd:29] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'Full_Adder' declared at 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:17' bound to instance 'lastrowcol0' of component 'Full_Adder' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/Multiplier.vhd:109] INFO: [Synth 8-3491] module 'Full_Adder' declared at 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/Full_Adder.vhd:17' bound to instance 'adder_end' of component 'Full_Adder' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/Multiplier.vhd:73] 
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'Multiplier' (9#1) [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/Multiplier.vhd:29] INFO: [Synth 8-256] done synthesizing module 'alu4' (10#1) [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/ALU4.vhd:26] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3280.391 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3280.391 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3280.391 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,060 MB. GUI used memory: 371 MB. Current time: 10/15/20, 3:00:33 PM EDT
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  3242 ms.
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/constrs_1/new/adc4.xdc] 
+// Tcl Message: Finished Parsing XDC File [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/constrs_1/new/adc4.xdc] Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 3308.398 ; gain = 28.008 
+// S (cl): Critical Messages: addNotify
+// Elapsed time: 13 seconds
+dismissDialog("Reloading"); // by (cl)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (S)
+dismissDialog("Critical Messages"); // S (cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cl)
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Schematic_zoom_in"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Schematic_zoom_in"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 35, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cl): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (A)
+// 'cx' command handler elapsed time: 3 seconds
+dismissDialog("Synthesis is Out-of-date"); // A (cl)
+// Elapsed time: 133 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Multiplier.vhd", 2); // k (j, cl)
+selectCodeEditor("Multiplier.vhd", 410, 504); // cl (w, cl)
+// Elapsed time: 16 seconds
+selectCodeEditor("Multiplier.vhd", 534, 645); // cl (w, cl)
+selectCodeEditor("Multiplier.vhd", 584, 451); // cl (w, cl)
+selectCodeEditor("Multiplier.vhd", 529, 654); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cl)
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Multiplier.vhd", 2); // k (j, cl)
+selectCodeEditor("Multiplier.vhd", 533, 668); // cl (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Multiplier.vhd", 2); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Multiplier.vhd", 2); // k (j, cl)
+// Elapsed time: 13 seconds
+selectCodeEditor("Multiplier.vhd", 551, 1251); // cl (w, cl)
+// Elapsed time: 31 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Multiplier.vhd", 2); // k (j, cl)
+selectCodeEditor("Multiplier.vhd", 707, 1241); // cl (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cl)
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Schematic_zoom_out"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Schematic_zoom_out"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Schematic_zoom_out"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Multiplier.vhd", 2); // k (j, cl)
+// Elapsed time: 15 seconds
+selectCodeEditor("Multiplier.vhd", 629, 718); // cl (w, cl)
+selectCodeEditor("Multiplier.vhd", 628, 748); // cl (w, cl)
+// Elapsed time: 22 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Multiplier.vhd", 2); // k (j, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cS, cl)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cS, cl)
+// by (cl):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3308.398 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: DESIGN_REFRESH
+// Engine heap size: 2,060 MB. GUI used memory: 374 MB. Current time: 10/15/20, 3:06:47 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,060 MB. GUI used memory: 373 MB. Current time: 10/15/20, 3:06:47 PM EDT
+// WARNING: HEventQueue.dispatchEvent() is taking  2768 ms.
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'alu4' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/ALU4.vhd:26] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  	Parameter D bound to: 2 - type: integer  	Parameter N bound to: 4 - type: integer  	Parameter D bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'sllN' declared at 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/sllN.vhd:18' bound to instance 'sll_comp' of component 'sllN' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/ALU4.vhd:110] INFO: [Synth 8-638] synthesizing module 'sllN' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/sllN.vhd:27] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  	Parameter D bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'sllN' (1#1) [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/sllN.vhd:27] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  	Parameter D bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'srlN' declared at 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/srlN.vhd:18' bound to instance 'srl_comp' of component 'srlN' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/ALU4.vhd:114] INFO: [Synth 8-638] synthesizing module 'srlN' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/srlN.vhd:25] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  	Parameter D bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'srlN' (2#1) [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/srlN.vhd:25] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  	Parameter D bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'sraN' declared at 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/sraN.vhd:19' bound to instance 'sra_comp' of component 'sraN' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/ALU4.vhd:118] INFO: [Synth 8-638] synthesizing module 'sraN' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/sraN.vhd:26] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  	Parameter D bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'sraN' (3#1) [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/sraN.vhd:26] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'alu_and' declared at 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/alu_and.vhd:20' bound to instance 'and_comp' of component 'alu_and' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/ALU4.vhd:122] INFO: [Synth 8-638] synthesizing module 'alu_and' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/alu_and.vhd:30] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'alu_and' (4#1) [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/alu_and.vhd:30] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'alu_or' declared at 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/alu_or.vhd:18' bound to instance 'or_comp' of component 'alu_or' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/ALU4.vhd:126] INFO: [Synth 8-638] synthesizing module 'alu_or' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/alu_or.vhd:28] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'alu_or' (5#1) [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/alu_or.vhd:28] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'alu_xor' declared at 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/alu_xor.vhd:19' bound to instance 'xor_comp' of component 'alu_xor' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/ALU4.vhd:130] INFO: [Synth 8-638] synthesizing module 'alu_xor' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/alu_xor.vhd:29] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'alu_xor' (6#1) [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/alu_xor.vhd:29] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'RippleCarryFullAdder' declared at 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/Ripple_Carry_Full_Adder.vhd:17' bound to instance 'addorsub' of component 'RippleCarryFullAdder' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/ALU4.vhd:134] INFO: [Synth 8-638] synthesizing module 'RippleCarryFullAdder' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/Ripple_Carry_Full_Adder.vhd:27] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'Multiplier' declared at 'C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/Multiplier.vhd:20' bound to instance 'multiply' of component 'Multiplier' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/ALU4.vhd:138] INFO: [Synth 8-638] synthesizing module 'Multiplier' [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/sources_1/new/Multiplier.vhd:29] 
+// Tcl Message: 	Parameter N bound to: 4 - type: integer  
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3308.398 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3308.398 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3308.398 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,060 MB. GUI used memory: 372 MB. Current time: 10/15/20, 3:06:49 PM EDT
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  3376 ms.
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/constrs_1/new/adc4.xdc] 
+// Tcl Message: Finished Parsing XDC File [C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.srcs/constrs_1/new/adc4.xdc] Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 3316.457 ; gain = 8.059 
+// S (cl): Critical Messages: addNotify
+// Elapsed time: 12 seconds
+dismissDialog("Reloading"); // by (cl)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (S)
+dismissDialog("Critical Messages"); // S (cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cl)
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Schematic_zoom_out"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Schematic_zoom_in"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Schematic_zoom_in"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 35, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cl): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// by (cl):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cl)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cl): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cx' command handler elapsed time: 3 seconds
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cl)
+// by (cl):  Generate Bitstream : addNotify
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Thu Oct 15 15:07:27 2020] Launched synth_1... Run output will be captured here: C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.runs/synth_1/runme.log [Thu Oct 15 15:07:27 2020] Launched impl_1... Run output will be captured here: C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // by (cl)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ah (cl): Bitstream Generation Completed: addNotify
+// Elapsed time: 121 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// by (cl):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// WARNING: HEventQueue.dispatchEvent() is taking  1201 ms.
+// Tcl Message: open_hw 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Open Hardware Manager"); // by (cl)
+// Elapsed time: 19 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cS, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// by (cl):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2019.1   **** Build date : May 24 2019 at 15:13:31     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  5038 ms.
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A37797A 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,215 MB. GUI used memory: 407 MB. Current time: 10/15/20, 3:10:03 PM EDT
+// Tcl Message: open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 4257.141 ; gain = 940.684 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.runs/impl_1/alu4.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [Engine Memory]: 2,215 MB (+161974kb) [01:01:46]
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// Elapsed time: 10 seconds
+dismissDialog("Auto Connect"); // by (cl)
+selectButton(PAResourceOtoP.ProgramDebugTab_REFRESH_DEVICE, "Refresh device"); // h (cS, cl)
+// Elapsed time: 52 seconds
+selectMenuItem((HResource) null, "xc7a35t_0"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_REFRESH_DEVICE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,238 MB. GUI used memory: 381 MB. Current time: 10/15/20, 3:11:09 PM EDT
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "XADC ;   ", 3, "XADC", 0, false); // t (O, cl)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cS, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// by (cl):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cl)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Dhruv/Desktop/DSD II/Lab_4/ALU/ALU.runs/impl_1/alu4.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // by (cl)
+// Elapsed time: 122 seconds
+selectTab((HResource) null, (HResource) null, "Hardware", 0); // aK (aH, cl)
+// PAResourceOtoP.PAViews_HARDWARE: Hardware: close view
+// RDIResource.RDIViews_PROPERTIES: Hardware Device Properties: close view
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A37797A 
+// n (cl): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 137 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cl)
+selectCodeEditor("Multiplier.vhd", 1453, 862); // cl (w, cl)
+// Elapsed time: 268 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU4.vhd", 2); // k (j, cl)
+selectCodeEditor("ALU4.vhd", 662, 610); // cl (w, cl)
+typeControlKey((HResource) null, "ALU4.vhd", 'c'); // cl (w, cl)
+typeControlKey((HResource) null, "ALU4.vhd", 'c'); // cl (w, cl)
+typeControlKey((HResource) null, "ALU4.vhd", 'c'); // cl (w, cl)
+typeControlKey((HResource) null, "ALU4.vhd", 'c'); // cl (w, cl)
+typeControlKey((HResource) null, "ALU4.vhd", 'c'); // cl (w, cl)
+// Elapsed time: 32 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // Z (q, cl)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cl)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// A (cl): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// by (cl):  Close Hardware Manager : addNotify
+// TclEventType: HW_OBJECT_DELETE
+dismissDialog("Confirm Close"); // A (cl)
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SESSION_CLOSE
+// WARNING: HEventQueue.dispatchEvent() is taking  1773 ms.
+// Tcl Message: close_hw 
+dismissDialog("Close Hardware Manager"); // by (cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu4(structural) (ALU4.vhd), addorsub : RippleCarryFullAdder(Behavioral) (Ripple_Carry_Full_Adder.vhd)]", 8, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu4(structural) (ALU4.vhd), addorsub : RippleCarryFullAdder(Behavioral) (Ripple_Carry_Full_Adder.vhd)]", 8, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectCodeEditor("Ripple_Carry_Full_Adder.vhd", 578, 861); // cl (w, cl)
+selectCodeEditor("Ripple_Carry_Full_Adder.vhd", 578, 861); // cl (w, cl)
+typeControlKey((HResource) null, "Ripple_Carry_Full_Adder.vhd", 'c'); // cl (w, cl)
+typeControlKey((HResource) null, "Ripple_Carry_Full_Adder.vhd", 'c'); // cl (w, cl)
+typeControlKey((HResource) null, "Ripple_Carry_Full_Adder.vhd", 'c'); // cl (w, cl)
+typeControlKey((HResource) null, "Ripple_Carry_Full_Adder.vhd", 'c'); // cl (w, cl)
+// Elapsed time: 528 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU4.vhd", 4); // k (j, cl)
+// Run Command: RDIResourceCommand.RDICommands_COPY
+// Run Command: RDIResourceCommand.RDICommands_COPY
+// Run Command: RDIResourceCommand.RDICommands_COPY
+// Elapsed time: 45 seconds
+selectCodeEditor("ALU4.vhd", 488, 412); // cl (w, cl)
+typeControlKey((HResource) null, "ALU4.vhd", 'c'); // cl (w, cl)
+typeControlKey((HResource) null, "ALU4.vhd", 'c'); // cl (w, cl)
+typeControlKey((HResource) null, "ALU4.vhd", 'c'); // cl (w, cl)

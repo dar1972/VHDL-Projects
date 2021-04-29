@@ -1,0 +1,48 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Sep  3 14:44:15 2020
+# Process ID: 10880
+# Current directory: C:/Users/Dhruv/Desktop/DSD II/Lab_1.2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5644 C:\Users\Dhruv\Desktop\DSD II\Lab_1.2\Lab_1.xpr
+# Log file: C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/vivado.log
+# Journal file: C:/Users/Dhruv/Desktop/DSD II/Lab_1.2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.xpr}
+update_compile_order -fileset sources_1
+close [ open {C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/xor.vhd} w ]
+add_files {{C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/xor.vhd}}
+close [ open {C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/or.vhd} w ]
+add_files {{C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/or.vhd}}
+close [ open {C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/and.vhd} w ]
+add_files {{C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/and.vhd}}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/and.vhd}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/or.vhd}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/xor.vhd}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/and.vhd} {C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/or.vhd} {C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/xor.vhd}}
+close [ open {C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/alu_or.vhd} w ]
+add_files {{C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/alu_or.vhd}}
+update_compile_order -fileset sources_1
+close [ open {C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/alu_xor.vhd} w ]
+add_files {{C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/alu_xor.vhd}}
+close [ open {C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/alu_and.vhd} w ]
+add_files {{C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/alu_and.vhd}}
+update_compile_order -fileset sources_1
+close [ open {C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/sraN.vhd} w ]
+add_files {{C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/sraN.vhd}}
+close [ open {C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/srlN.vhd} w ]
+add_files {{C:/Users/Dhruv/Desktop/DSD II/Lab_1.2/Lab_1.srcs/sources_1/new/srlN.vhd}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation

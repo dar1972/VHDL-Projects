@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Sep 25 15:58:07 2020
+# Process ID: 10084
+# Current directory: C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.runs/synth_1
+# Command line: vivado.exe -log InstructionFetch.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source InstructionFetch.tcl
+# Log file: C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.runs/synth_1/InstructionFetch.vds
+# Journal file: C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source InstructionFetch.tcl -notrace

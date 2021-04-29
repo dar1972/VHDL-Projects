@@ -1,0 +1,23 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+Error: wrong instruction given
+Time: 0 ps  Iteration: 1  Process: /InstructionFetchTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sim_1/new/InstructionFetchTB.vhd
+Error: wrong instruction given
+Time: 100 ns  Iteration: 1  Process: /InstructionFetchTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sim_1/new/InstructionFetchTB.vhd
+Error: wrong instruction given
+Time: 200 ns  Iteration: 1  Process: /InstructionFetchTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sim_1/new/InstructionFetchTB.vhd
+Error: wrong instruction given
+Time: 300 ns  Iteration: 1  Process: /InstructionFetchTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sim_1/new/InstructionFetchTB.vhd
+Error: wrong instruction given
+Time: 400 ns  Iteration: 1  Process: /InstructionFetchTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sim_1/new/InstructionFetchTB.vhd
+Error: wrong instruction given
+Time: 500 ns  Iteration: 1  Process: /InstructionFetchTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sim_1/new/InstructionFetchTB.vhd
+Error: wrong instruction given
+Time: 600 ns  Iteration: 1  Process: /InstructionFetchTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sim_1/new/InstructionFetchTB.vhd
+Error: wrong instruction given
+Time: 700 ns  Iteration: 1  Process: /InstructionFetchTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sim_1/new/InstructionFetchTB.vhd
+Error: wrong instruction given
+Time: 800 ns  Iteration: 1  Process: /InstructionFetchTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sim_1/new/InstructionFetchTB.vhd
+Failure: Testbench Concluded
+Time: 900 ns  Iteration: 1  Process: /InstructionFetchTB/stim_proc  File: C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sim_1/new/InstructionFetchTB.vhd
+$finish called at time : 900 ns : File "C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Fetch/Lab_3.srcs/sim_1/new/InstructionFetchTB.vhd" Line 89

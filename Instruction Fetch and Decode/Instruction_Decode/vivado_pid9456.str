@@ -1,0 +1,135 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 9456
+License: Customer
+
+Current time: 	Fri Sep 25 16:07:41 EDT 2020
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 2560x1600
+Screen resolution (DPI): 200
+Available screens: 2
+Available disk space: 27 GB
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=24
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Dhruv
+User home directory: C:/Users/Dhruv
+User working directory: C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2019.1
+RDI_DATADIR: C:/Xilinx/Vivado/2019.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2019.1/bin
+
+Vivado preferences file location: C:/Users/Dhruv/AppData/Roaming/Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: C:/Users/Dhruv/AppData/Roaming/Xilinx/Vivado/2019.1/
+Vivado layouts directory: C:/Users/Dhruv/AppData/Roaming/Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode/vivado.log
+Vivado journal file location: 	C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode/vivado.jou
+Engine tmp dir: 	C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode/.Xil/Vivado-9456-Macbook_Win
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2019.1
+XILINX_SDK: C:/Xilinx/SDK/2019.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2019.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2019.1
+
+
+GUI allocated memory:	168 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 690 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// by (cl):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Dhruv\Desktop\DSD II\Lab_3\Instruction_Decode\Instruction_Decode.xpr. Version: Vivado v2019.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode/Instruction_Decode.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode/Instruction_Decode.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 123 MB (+126475kb) [00:00:10]
+// [Engine Memory]: 674 MB (+555547kb) [00:00:10]
+// [GUI Memory]: 135 MB (+6635kb) [00:00:10]
+// [GUI Memory]: 143 MB (+621kb) [00:00:11]
+// WARNING: HEventQueue.dispatchEvent() is taking  2564 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 698 MB. GUI used memory: 83 MB. Current time: 9/25/20, 4:07:42 PM EDT
+// Project name: Instruction_Decode; location: C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // by (cl)
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 181 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, GenericDecoder(Behavioral) (GenericDecoder.vhd)]", 2, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, GenericDecoder(Behavioral) (GenericDecoder.vhd)]", 2, false, false, false, false, true, false); // B (F, cl) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (an, cl)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ae (an, cl)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ae (an, cl)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (an, cl)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (an, cl)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ae (an, cl)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ae (an, cl)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (an, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_REPLACE_FILE, "Replace File..."); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_SRC_REPLACE_FILE
+// HMemoryUtils.trashcanNow. Engine heap size: 716 MB. GUI used memory: 84 MB. Current time: 9/25/20, 4:11:06 PM EDT
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 716 MB (+8507kb) [00:04:08]
+// Elapsed time: 74 seconds
+setFileChooser("C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode/Instruction_Decode.srcs/sources_1/new/GenericMultiplexer.vhd");
+// 'dJ' command handler elapsed time: 74 seconds
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// by (cl):  Replace File : addNotify
+// Tcl Message: update_files -from_files {{C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode/Instruction_Decode.srcs/sources_1/new/GenericMultiplexer.vhd}} -to_files {{C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode/Instruction_Decode.srcs/sources_1/new/GenericDecoder.vhd}} -filesets [get_filesets *] 
+// Tcl Message: INFO: [filemgmt 20-762] Replacing file 'C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode/Instruction_Decode.srcs/sources_1/new/GenericDecoder.vhd' with file 'C:/Users/Dhruv/Desktop/DSD II/Lab_3/Instruction_Decode/Instruction_Decode.srcs/sources_1/new/GenericMultiplexer.vhd'. 
+dismissDialog("Replace File"); // by (cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, GenericDecoder(Behavioral) (GenericDecoder.vhd)]", 2, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, GenericDecoder(Behavioral) (GenericDecoder.vhd)]", 2, false, false, false, false, true, false); // B (F, cl) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_REPLACE_FILE, "Replace File..."); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_SRC_REPLACE_FILE

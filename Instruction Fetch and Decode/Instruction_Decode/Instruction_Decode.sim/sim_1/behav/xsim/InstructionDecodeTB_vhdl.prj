@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Instruction_Decode.srcs/sources_1/new/control_unit.vhd" \
+"../../../../Instruction_Decode.srcs/sources_1/new/generic_decoder.vhd" \
+"../../../../Instruction_Decode.srcs/sources_1/new/generic_mux.vhd" \
+"../../../../Instruction_Decode.srcs/sources_1/new/instruction_decoder.vhd" \
+"../../../../Instruction_Decode.srcs/sources_1/new/register_file.vhd" \
+"../../../../Instruction_Decode.srcs/sources_1/new/register_module.vhd" \
+"../../../../Instruction_Decode.srcs/sources_1/new/two_and.vhd" \
+"../../../../Instruction_Decode.srcs/sim_1/new/InstructionDecodeTB.vhd" \
+
+# Do not sort compile order
+nosort

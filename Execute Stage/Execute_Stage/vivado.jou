@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Oct 15 15:15:59 2020
+# Process ID: 7552
+# Current directory: C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11884 C:\Users\Dhruv\Desktop\DSD II\Lab_4\Execute_Stage\Execute_Stage.xpr
+# Log file: C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/vivado.log
+# Journal file: C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Dhruv/Desktop/DSD II/Lab_4/Execute_Stage/Execute_Stage.xpr}
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ExecuteStage_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source ExecuteStage_tb.tcl
